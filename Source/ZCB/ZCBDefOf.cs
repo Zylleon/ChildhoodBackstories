@@ -11,5 +11,6 @@ namespace ZCB
     public static class ZCBDefOf
     {
         public static BackstoryDef ColonyChild59;
+        public static ZCBackstoryDef ZCB_ColonyChild;
     }
 }

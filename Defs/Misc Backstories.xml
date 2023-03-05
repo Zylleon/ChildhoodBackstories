@@ -4,11 +4,9 @@
 
 <!-- fear of fire -->
 	<ZCB.ZCBackstoryDef>
-		<defName>ZCB_TestBackstory</defName>
-		<title>test</title>
-		<titleFemale>test</titleFemale>
-		<titleShort>test</titleShort>
-		<titleShortFemale>test</titleShortFemale>
+		<defName>ZCB_ChildBurnVictim</defName>
+		<title>burn victim</title>
+		<titleShort>burned</titleShort>
 		<baseDesc>After being terribly burned as a child, [PAWN_nameDef] developed a life-long fear of fire. 
 \n[PAWN_possessive] skills are amazing!</baseDesc>
 		<slot>Childhood</slot>
@@ -23,13 +21,12 @@
 		</requiredRecords>
 		<skillGains>
 			<li>
-				<key>Cooking</key>
-				<value>0</value>
+				<key>Medicine</key>
+				<value>2</value>
 			</li>
 		</skillGains>
 		<workDisables>
-			<li>Intellectual</li>
-			<li>Artistic</li>
+			<li>Firefighting</li>
 		</workDisables>
 	</ZCB.ZCBackstoryDef>
 

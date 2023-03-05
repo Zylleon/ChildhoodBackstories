@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!-- child nurse -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_ChildNurse</defName>
+		<title>child nurse</title>
+		<titleShort>nurse</titleShort>
+		<baseDesc>[PAWN_nameDef] grew up taking care of the sick and injured.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<requiredRecords>
+			<li>
+				<name>TimesTendedOther</name>
+				<minValue>30</minValue>
+			</li>
+		</requiredRecords>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>-1</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>-1</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+<!-- child doctor -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_ChildDoctor</defName>
+		<title>child doctor</title>
+		<titleShort>doctor</titleShort>
+		<baseDesc>[PAWN_nameDef] grew up taking care of the sick and injured. [PAWN_pronoun] is a medical prodigy, but abhors violence.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<requiredRecords>
+			<li>
+				<name>TimesTendedOther</name>
+				<minValue>45</minValue>
+			</li>
+			<li>
+				<name>OperationsPerformed</name>
+				<minValue>1</minValue>
+			</li>
+		</requiredRecords>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+	</ZCB.ZCBackstoryDef>
+
+
+</Defs>

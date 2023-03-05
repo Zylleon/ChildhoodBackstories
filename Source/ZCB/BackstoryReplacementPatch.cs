@@ -17,12 +17,14 @@ namespace ZCB
             if (pawn.story.Childhood == ZCBDefOf.ColonyChild59)
             {
                 List<ZCBackstoryDef> backstories = DefDatabase<ZCBackstoryDef>.AllDefsListForReading;
-                backstories = backstories.Where(b => b.IsAcceptable(pawn)).ToList();
-                ZCBackstoryDef backstory = backstories.RandomElement();
+                backstories = backstories.Where(b => b.IsAcceptable(pawn) && b.spawnCategories.Contains("ZCB")).ToList();
+                ZCBackstoryDef backstory = ZCBDefOf.ZCB_ColonyChild;
+                if (!backstories.NullOrEmpty())
+                {
+                    backstory = backstories.RandomElement();
+                }
+
                 pawn.story.Childhood = backstory;
-
-                Log.Message(backstory.defName);
-
                 if (!backstory.skillGains.NullOrEmpty())
                 {
                     foreach (KeyValuePair<SkillDef, int> skillGain in backstory.skillGains)
