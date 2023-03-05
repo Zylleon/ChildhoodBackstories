@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+<!-- fear of fire -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_TestBackstory</defName>
+		<title>test</title>
+		<titleFemale>test</titleFemale>
+		<titleShort>test</titleShort>
+		<titleShortFemale>test</titleShortFemale>
+		<baseDesc>After being terribly burned as a child, [PAWN_nameDef] developed a life-long fear of fire. 
+\n[PAWN_possessive] skills are amazing!</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<requiredRecords>
+			<li>
+				<name>TimeOnFire</name>
+				<minValue>30000</minValue>
+			</li>
+		</requiredRecords>
+		<skillGains>
+			<li>
+				<key>Cooking</key>
+				<value>0</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+		</workDisables>
+	</ZCB.ZCBackstoryDef>
+
+
+</Defs>

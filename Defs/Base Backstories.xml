@@ -35,7 +35,7 @@
 		<skillGains>
 			<li>
 				<key>Cooking</key>
-				<value>10</value>
+				<value>0</value>
 			</li>
 		</skillGains>
 		<workDisables>

@@ -10,17 +10,14 @@ using Verse;
 namespace ZCB
 {
     [HarmonyPatch(typeof(RimWorld.LifeStageWorker_HumanlikeAdult), "Notify_LifeStageStarted")]
-    static class PredAdjustment
+    static class BackstoryReplacementPatch
     {
         static void Postfix(Pawn pawn, LifeStageDef previousLifeStage)
         {
             if (pawn.story.Childhood == ZCBDefOf.ColonyChild59)
             {
-                Log.Message("Shuffling Backstory");
-
                 List<ZCBackstoryDef> backstories = DefDatabase<ZCBackstoryDef>.AllDefsListForReading;
                 backstories = backstories.Where(b => b.IsAcceptable(pawn)).ToList();
-                Log.Message("Available backstories: " + backstories.Count());
                 ZCBackstoryDef backstory = backstories.RandomElement();
                 pawn.story.Childhood = backstory;
 

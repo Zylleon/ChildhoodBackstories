@@ -24,13 +24,10 @@ namespace ZCB
                 List<RecordDef> allRecordDefs = DefDatabase<RecordDef>.AllDefsListForReading;
                 foreach (ZCBReq reqR in requiredRecords)
                 {
-                    Log.Message("Requires " + reqR.name + "minValue " + reqR.minValue);
                     RecordDef reqDef = allRecordDefs.Where(r => r.defName == reqR.name).FirstOrDefault();
                     float reqValue = pawn.records.GetValue(reqDef);
-                    Log.Message("actual value: " + reqValue);
                     if (reqValue < reqR.minValue)
                     {
-                        Log.Message("not a valid backstory");
                         output = false;
                     }
                     if (reqValue > reqR.maxValue)
@@ -68,7 +65,7 @@ namespace ZCB
     {
         public string name;
         public float minValue = 0;
-        public float maxValue = 999999;
+        public float maxValue = 999999999;
     }
 
 }
