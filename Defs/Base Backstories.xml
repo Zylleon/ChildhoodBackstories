@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!-- baseline backstory, nothing special -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_ColonyChild</defName>
+		<title>colony child</title>
+		<titleShort>colonist</titleShort>
+		<baseDesc>[PAWN_nameDef] grew up in our colony... and is still growing</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> <!--  not part of child pool -->
+		</spawnCategories>
+	</ZCB.ZCBackstoryDef>
+
+
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_TestBackstory</defName>
+		<title>test</title>
+		<titleFemale>test</titleFemale>
+		<titleShort>test</titleShort>
+		<titleShortFemale>test</titleShortFemale>
+		<baseDesc>[PAWN_nameDef] grew up in the sludge-smeared sewers of a polluted industrial world.
+\n[PAWN_pronoun] befriended the strange insects in the darkness, and learned to love them. 
+\n[PAWN_possessive] skills are amazing!</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<requiredRecords>
+			<li>
+				<name>KillsHumanlikes</name>
+				<minValue>0</minValue>
+			</li>
+		</requiredRecords>
+		<skillGains>
+			<li>
+				<key>Cooking</key>
+				<value>10</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+		</workDisables>
+	</ZCB.ZCBackstoryDef>
+
+
+</Defs>

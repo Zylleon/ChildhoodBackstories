@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+  <name>Childhood Backstories</name>
+  <author>Zylle</author>
+  <supportedVersions><li>1.4</li></supportedVersions>
+  <packageId>zylle.ChildboodBackstories</packageId>
+  <description>
+  Description goes here.
+  
+  This is a test mod. This "mod" contains random bits of code I was playing around with. You might find some of it useful?
+</description>
+</ModMetaData>
