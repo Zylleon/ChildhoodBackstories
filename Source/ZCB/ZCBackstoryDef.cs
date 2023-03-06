@@ -12,7 +12,7 @@ namespace ZCB
     {
         public List<ZCBReq> requiredRecords;
         public List<ZCBReq> requiredSkills;
-
+        public List<ZCBRecordRatio> recordRatios;
 
         public bool IsAcceptable (Pawn pawn)
         {
@@ -31,6 +31,26 @@ namespace ZCB
                         output = false;
                     }
                     if (reqValue > reqR.maxValue)
+                    {
+                        output = false;
+                    }
+                }
+            }
+            if (!recordRatios.NullOrEmpty())
+            {
+                List<RecordDef> allRecordDefs = DefDatabase<RecordDef>.AllDefsListForReading;
+                foreach (ZCBRecordRatio reqR in recordRatios)
+                {
+                    RecordDef bigRec = allRecordDefs.Where(r => r.defName == reqR.bigRecord).FirstOrDefault();
+                    RecordDef smallRec = allRecordDefs.Where(r => r.defName == reqR.smallRecord).FirstOrDefault();
+                    if (reqR.ratio == 0)
+                    {
+                        if (pawn.records.GetValue(bigRec) <= pawn.records.GetValue(smallRec))
+                        {
+                            output = false;
+                        }
+                    }
+                    else if (pawn.records.GetValue(bigRec) / pawn.records.GetValue(smallRec) < reqR.ratio)
                     {
                         output = false;
                     }
@@ -68,4 +88,10 @@ namespace ZCB
         public float maxValue = 999999999;
     }
 
+    public class ZCBRecordRatio
+    {
+        public string bigRecord;
+        public string smallRecord;
+        public float ratio = 0f;
+    }
 }
