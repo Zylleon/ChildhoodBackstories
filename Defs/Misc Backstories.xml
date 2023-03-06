@@ -7,8 +7,7 @@
 		<defName>ZCB_ChildBurnVictim</defName>
 		<title>burn victim</title>
 		<titleShort>burned</titleShort>
-		<baseDesc>After being terribly burned as a child, [PAWN_nameDef] developed a life-long fear of fire. 
-\n[PAWN_possessive] skills are amazing!</baseDesc>
+		<baseDesc>After being terribly burned as a child, [PAWN_nameDef] developed a life-long fear of fire.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
