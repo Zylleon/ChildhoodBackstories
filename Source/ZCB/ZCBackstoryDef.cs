@@ -11,14 +11,31 @@ namespace ZCB
     public class ZCBackstoryDef : BackstoryDef
     {
         public List<ZCBReq> requiredRecords;
-        public List<ZCBReq> requiredSkills;
         public List<ZCBRecordRatio> recordRatios;
+        public List<ZCBReq> requiredSkills;
+        public IntRange colonySize = new IntRange(0, 9999);
 
         public bool IsAcceptable (Pawn pawn)
         {
             bool output = true;
             //Log.Message("EVALUATING " + this.defName);
-            
+
+            // disallow backstory if the backstory disables any skill the pawn has passion in
+            List<SkillDef> allSkillDefs = DefDatabase<SkillDef>.AllDefsListForReading;
+            foreach (SkillDef skill in allSkillDefs)
+            {
+                if(pawn.skills.GetSkill(skill).passion != 0 && (workDisables & skill.disablingWorkTags) != WorkTags.None)
+                {
+                    output = false;
+                }
+            }
+
+            if(PawnsFinder.AllMaps_FreeColonistsSpawned.Count() < colonySize.min || PawnsFinder.AllMaps_FreeColonistsSpawned.Count() > colonySize.max)
+            {
+                return false;
+            }
+
+
             if (!requiredRecords.NullOrEmpty())
             {
                 List<RecordDef> allRecordDefs = DefDatabase<RecordDef>.AllDefsListForReading;

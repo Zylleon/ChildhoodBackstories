@@ -80,8 +80,8 @@
 		</spawnCategories>
 		<recordRatios>
 			<li>		<!-- spent at least 10% of their time in prison -->
-				<bigRecord>TimeAsColonistOrColonyAnimal</bigRecord>
-				<smallRecord>TimeAsPrisoner</smallRecord>
+				<bigRecord>TimeAsPrisoner</bigRecord>
+				<smallRecord>TimeAsColonistOrColonyAnimal</smallRecord>
 				<ratio>0.1</ratio>
 			</li>
 		</recordRatios>
@@ -103,5 +103,66 @@
 			<li>Intellectual</li>
 		</workDisables>
 	</ZCB.ZCBackstoryDef>
+
+
+<!-- sole survivor -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_SoleSurvivor</defName>
+		<title>sole suvivor</title>
+		<titleShort>suvivor</titleShort>
+		<baseDesc>Left completely alone, [PAWN_nameDef] was forced to fend for themselves at a young age.Much of [PAWN_possessive] early childhood is a mystery, but [PAWN_nameDef] came of age in our colony.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<colonySize>1~1</colonySize>
+		<skillGains>		<!-- gains in most skills, loss in social -->
+			<li>
+				<key>Medicine</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>-3</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Cooking</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Mining</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
 
 </Defs>
