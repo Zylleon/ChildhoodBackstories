@@ -69,9 +69,7 @@
 		<defName>ZCB_ChildSuperSoldier</defName>
 		<title>child supersoldier</title>
 		<titleShort>soldier</titleShort>
-		<baseDesc>[PAWN_nameDef] grew up on the battlefield. All [PAWN_pronoun] knows is combat.
-\n[PAWN_pronoun] befriended the strange insects in the darkness, and learned to love them. 
-\n[PAWN_possessive] skills are amazing!</baseDesc>
+		<baseDesc>[PAWN_nameDef] grew up on the battlefield. All [PAWN_pronoun] knows is combat.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 

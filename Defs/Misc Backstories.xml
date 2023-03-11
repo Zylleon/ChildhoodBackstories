@@ -110,7 +110,7 @@
 		<defName>ZCB_SoleSurvivor</defName>
 		<title>sole suvivor</title>
 		<titleShort>suvivor</titleShort>
-		<baseDesc>Left completely alone, [PAWN_nameDef] was forced to fend for themselves at a young age.Much of [PAWN_possessive] early childhood is a mystery, but [PAWN_nameDef] came of age in our colony.</baseDesc>
+		<baseDesc>Left completely alone, [PAWN_nameDef] was forced to fend for themselves at a young age.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
@@ -163,6 +163,44 @@
 			</li>
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
+
+
+<!-- serial killer -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_SerialKiller</defName>
+		<title>serial killer</title>
+		<titleShort>killer</titleShort>
+		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] childhood learning how to take people apart. [PAWN_possessive] never learned how to put them back together.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<requiredRecords>
+			<li>
+				<name>KillsHumanlikes</name>
+				<minValue>5</minValue>
+			</li>
+			<li>
+				<name>TimesTendedOther</name>
+				<maxValue>5</maxValue>
+			</li>
+		</requiredRecords>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Medicine</li>
+		</workDisables>
+	</ZCB.ZCBackstoryDef>
+
+
 
 
 </Defs>

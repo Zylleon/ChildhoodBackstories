@@ -74,4 +74,76 @@
 	</ZCB.ZCBackstoryDef>
 
 
+<!-- farmhand -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Farmhand</defName>
+		<title>farmhand</title>
+		<titleShort>farmhand</titleShort>
+		<baseDesc>[PAWN_nameDef] grew up helping around the farm, gaining insight into both planting and animal husbandry.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<requiredRecords>
+			<li>
+				<name>TimeHandlingAnimals</name>
+				<minValue>1</minValue>
+			</li>
+		</requiredRecords>
+		<requiredSkills>
+			<li>
+				<name>Plants</name>
+				<minValue>5</minValue>
+			</li>
+		</requiredSkills>
+		<skillGains>
+			<li>
+				<key>Plants</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+<!-- ranch kid -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_RanchKid</defName>
+		<title>ranch kid</title>
+		<titleShort>rancher</titleShort>
+		<baseDesc>[PAWN_nameDef] took care of the colony's animals.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<requiredRecords>
+			<li>
+				<name>TimesTendedOther</name>
+				<minValue>5</minValue>
+			</li>
+		</requiredRecords>
+		<requiredSkills>
+			<li>
+				<name>Animals</name>
+				<minValue>4</minValue>
+			</li>
+		</requiredSkills>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+
 </Defs>
