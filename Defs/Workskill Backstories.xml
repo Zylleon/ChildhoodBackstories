@@ -144,6 +144,81 @@
 	</ZCB.ZCBackstoryDef>
 
 
+<!-- cook's helper -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_CooksHelper</defName>
+		<title>cook's helper</title>
+		<titleShort>cook</titleShort>
+		<baseDesc>[PAWN_nameDef] helped in the kitchen, chopping vegetables and preparing simple meals for the colony. [PAWN_pronoun] learned how to make delicious meals efficiently while avoiding food poisoning.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<requiredSkills>
+			<li>
+				<name>Cooking</name>
+				<minValue>7</minValue>
+			</li>
+			<li>
+				<name>Construction</name>
+				<maxValue>5</maxValue>
+			</li>
+		</requiredSkills>
+		<skillGains>
+			<li>
+				<key>Cooking</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>-3</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
 
+
+<!-- child laborer -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_ChildLaborer</defName>
+		<title>child laborer</title>
+		<titleShort>laborer</titleShort>
+		<baseDesc>[PAWN_nameDef] worked manual jobs around the colony, carrying carried materials for construction and crafting equipment.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<requiredRecords>
+			<li>
+				<name>ThingsConstructed</name>
+				<minValue>20</minValue>
+			</li>
+			<li>
+				<name>ThingsCrafted</name>
+				<minValue>100</minValue>
+			</li>
+		</requiredRecords>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Artistic</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+		</workDisables>
+	</ZCB.ZCBackstoryDef>
 
 </Defs>
