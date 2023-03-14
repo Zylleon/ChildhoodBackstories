@@ -144,10 +144,10 @@
 	</ZCB.ZCBackstoryDef>
 
 
-<!-- cook's helper -->
+<!-- kitchen aid -->
 	<ZCB.ZCBackstoryDef>
-		<defName>ZCB_CooksHelper</defName>
-		<title>cook's helper</title>
+		<defName>ZCB_KitchenAid</defName>
+		<title>kitchen aid</title>
 		<titleShort>cook</titleShort>
 		<baseDesc>[PAWN_nameDef] helped in the kitchen, chopping vegetables and preparing simple meals for the colony. [PAWN_pronoun] learned how to make delicious meals efficiently while avoiding food poisoning.</baseDesc>
 		<slot>Childhood</slot>
@@ -198,7 +198,7 @@
 			</li>
 			<li>
 				<name>ThingsCrafted</name>
-				<minValue>100</minValue>
+				<minValue>300</minValue>
 			</li>
 		</requiredRecords>
 		<skillGains>
@@ -217,8 +217,44 @@
 		</skillGains>
 		<workDisables>
 			<li>Intellectual</li>
-			<li>Artistic</li>
 		</workDisables>
 	</ZCB.ZCBackstoryDef>
+
+
+<!-- budding artist -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_BuddingArtist</defName>
+		<title>budding artist</title>
+		<titleShort>artist</titleShort>
+		<titleShortFemale>test</titleShortFemale>
+		<baseDesc>[PAWN_nameDef] loved art from a young age, spending hours drawing on the floor and even dabbling in sculpture. However, [PAWN_pronoun] never learned to use [PAWN_possessive] skills in a practical way.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<requiredSkills>
+			<li>
+				<name>Artistic</name>
+				<minValue>4</minValue>
+			</li>
+		</requiredSkills>
+		<requiredPassions>
+			<li>Artistic</li>
+		</requiredPassions>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>-3</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+
 
 </Defs>

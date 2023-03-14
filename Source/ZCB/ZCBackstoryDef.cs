@@ -13,6 +13,7 @@ namespace ZCB
         public List<ZCBReq> requiredRecords;
         public List<ZCBRecordRatio> recordRatios;
         public List<ZCBReq> requiredSkills;
+        public List<string> requiredPassions;
         public IntRange colonySize = new IntRange(0, 9999);
 
         public bool IsAcceptable (Pawn pawn)
@@ -35,10 +36,9 @@ namespace ZCB
                 return false;
             }
 
-
+            List<RecordDef> allRecordDefs = DefDatabase<RecordDef>.AllDefsListForReading;
             if (!requiredRecords.NullOrEmpty())
             {
-                List<RecordDef> allRecordDefs = DefDatabase<RecordDef>.AllDefsListForReading;
                 foreach (ZCBReq reqR in requiredRecords)
                 {
                     RecordDef reqDef = allRecordDefs.Where(r => r.defName == reqR.name).FirstOrDefault();
@@ -55,7 +55,6 @@ namespace ZCB
             }
             if (!recordRatios.NullOrEmpty())
             {
-                List<RecordDef> allRecordDefs = DefDatabase<RecordDef>.AllDefsListForReading;
                 foreach (ZCBRecordRatio reqR in recordRatios)
                 {
                     RecordDef bigRec = allRecordDefs.Where(r => r.defName == reqR.bigRecord).FirstOrDefault();
@@ -75,10 +74,9 @@ namespace ZCB
             }
             if (!requiredSkills.NullOrEmpty())
             {
-                List<SkillDef> allRecordDefs = DefDatabase<SkillDef>.AllDefsListForReading;
                 foreach (ZCBReq reqS in requiredSkills)
                 {
-                    SkillDef skillDef = allRecordDefs.Where(r => r.defName == reqS.name).FirstOrDefault();
+                    SkillDef skillDef = allSkillDefs.Where(r => r.defName == reqS.name).FirstOrDefault();
                     float reqValue = pawn.skills.GetSkill(skillDef).Level;
                     if (reqValue < reqS.minValue)
                     {
@@ -90,6 +88,20 @@ namespace ZCB
                     }
                 }
             }
+            if(!requiredPassions.NullOrEmpty())
+            {
+                foreach(string skill in requiredPassions)
+                {
+                    SkillDef skillDef = allSkillDefs.Where(r => r.defName == skill).FirstOrDefault();
+                    if(pawn.skills.GetSkill(skillDef).passion == 0)
+                    {
+                        output = false;
+                    }
+                }
+            }
+
+
+
 
             return output;
         }
