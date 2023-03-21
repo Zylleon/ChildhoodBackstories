@@ -80,8 +80,8 @@
 		</spawnCategories>
 		<recordRatios>
 			<li>		<!-- spent at least 10% of their time in prison -->
-				<bigRecord>TimeAsPrisoner</bigRecord>
-				<smallRecord>TimeAsColonistOrColonyAnimal</smallRecord>
+				<numerator>TimeAsPrisoner</numerator>
+				<denominator>TimeAsColonistOrColonyAnimal</denominator>
 				<ratio>0.1</ratio>
 			</li>
 		</recordRatios>
@@ -110,7 +110,7 @@
 		<defName>ZCB_SoleSurvivor</defName>
 		<title>sole suvivor</title>
 		<titleShort>suvivor</titleShort>
-		<baseDesc>Left completely alone, [PAWN_nameDef] was forced to fend for themselves at a young age.</baseDesc>
+		<baseDesc>Left completely alone, [PAWN_nameDef] was forced to fend for [PAWN_objective]self at a young age.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
@@ -201,6 +201,49 @@
 	</ZCB.ZCBackstoryDef>
 
 
+<!-- war orphan -->
+<ZCB.ZCBackstoryDef>
+		<defName>ZCB_WarOrphan</defName>
+		<title>war orphan</title>
+		<titleShort>orphan</titleShort>
+		<baseDesc>After losing both parents, [PAWN_nameDef] was frequently forced defend [PAWN_objective]self. [PAWN_pronoun] withdrew from society, finding solace in art.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 							
+		</spawnCategories>
+		
+		<father>Dead</father>
+		<mother>Dead</mother>
 
+		<requiredRecords>
+			<li>
+				<name>TimeDrafted</name>
+				<minValue>30000</minValue>			<!-- half a day -->
+			</li>
+		</requiredRecords>	
+
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Artistic</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Social</li>
+			<li>Animals</li>
+		</workDisables>
+	</ZCB.ZCBackstoryDef>
 
 </Defs>

@@ -43,21 +43,20 @@
 		<defName>ZCB_ChildDoctor</defName>
 		<title>child doctor</title>
 		<titleShort>doctor</titleShort>
-		<baseDesc>[PAWN_nameDef] grew up taking care of the sick and injured. [PAWN_pronoun] is a medical prodigy, but abhors violence.</baseDesc>
+		<baseDesc>[PAWN_pronoun] was a medical prodigy, caring for the sick and injured and even performing surgery at a young age. Having seen so many injuries, [PAWN_pronoun] abhors violence.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
 		</spawnCategories>
 		<requiredRecords>
 			<li>
-				<name>TimesTendedOther</name>
-				<minValue>45</minValue>
-			</li>
-			<li>
 				<name>OperationsPerformed</name>
 				<minValue>1</minValue>
 			</li>
 		</requiredRecords>
+		<requiredPassions>
+			<li>Medicine</li>
+		</requiredPassions>
 		<skillGains>
 			<li>
 				<key>Medicine</key>
@@ -72,6 +71,7 @@
 			<li>Violent</li>
 		</workDisables>
 	</ZCB.ZCBackstoryDef>
+
 
 
 <!-- farmhand -->
