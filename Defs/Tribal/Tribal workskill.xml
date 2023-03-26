@@ -13,6 +13,7 @@
 			<li>ZCB</li> 
 			<li>ZCB_NaturalMeditation</li>
 		</spawnCategories>
+		<maxTechLevel>Neolithic</maxTechLevel>
 		<colonySize>4~999</colonySize>
 		<requiredSkills>
 			<li>
@@ -50,6 +51,53 @@
 			</li>
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
+
+
+<!-- hunter -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_TribalHunter</defName>
+		<title>tribal hunter</title>
+		<titleShort>hunter</titleShort>
+		<baseDesc>[PAWN_nameDef] wasn't very skilled with a bow, but [PAWN_pronoun] still managed to successfully hunt, helping feed [PAWN_possessive] tribe.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 							<!-- required -->
+			<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus -->
+		</spawnCategories>
+		
+		<!-- new tags start here -->
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<requiredRecords>
+			<li>		<!-- spent at least 1 day hunting -->
+				<name>TimeHunting</name>
+				<minValue>60000</minValue>
+			</li>
+			<li>
+				<name>KillsAnimals</name>
+				<minValue>5</minValue>
+			</li>
+		</requiredRecords>
+		<requiredSkills>
+			<li>
+				<name>Shooting</name>
+				<maxValue>6</maxValue>
+			</li>
+		</requiredSkills>
+		
+		<!-- new tags end here-->
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
 
 
 

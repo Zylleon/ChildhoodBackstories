@@ -30,44 +30,6 @@
 	</ZCB.ZCBackstoryDef>
 	
 
-<!-- lost child -->
-	<ZCB.ZCBackstoryDef>
-		<defName>ZCB_LostChild</defName>
-		<title>lost boy</title>
-		<titleFemale>lost girl</titleFemale>
-		<titleShort>lost</titleShort>
-		<baseDesc>Much of [PAWN_possessive] early childhood is a mystery, but [PAWN_nameDef] came of age in our colony.</baseDesc>
-		<slot>Childhood</slot>
-		<spawnCategories>
-			<li>ZCB</li> 
-		</spawnCategories>
-		<requiredRecords>
-			<li>
-				<name>TimeAsColonistOrColonyAnimal</name>
-				<maxValue>3000000</maxValue>		<!-- one year -->
-			</li>
-		</requiredRecords>
-		<skillGains>
-			<li>
-				<key>Cooking</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Crafting</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>-2</value>
-			</li>
-		</skillGains>
-	</ZCB.ZCBackstoryDef>
-
-
 <!-- juvenile delinquent -->
 	<ZCB.ZCBackstoryDef>
 		<defName>ZCB_JuvenileDelinquent</defName>
