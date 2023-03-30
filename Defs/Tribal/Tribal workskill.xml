@@ -98,6 +98,39 @@
 	</ZCB.ZCBackstoryDef>
 
 
+<!-- gatherer -->
+	<ZCB.ZCBackstoryDef parentName="ZCB_TribalChild">
+		<defName>ZCB_Gatherer</defName>
+		<title>gatherer</title>
+		<titleShort>gatherer</titleShort>
+		<baseDesc>[PAWN_pronoun] gathered roots and berries to help feed her tribe.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<requiredRecords>
+			<li>
+				<name>PlantsHarvested</name>
+				<minValue>200</minValue>
+			</li>
+		</requiredRecords>
+		<requiredPassions>
+			<li>Plants</li>
+		</requiredPassions>
+		<skillGains>
+			<li>
+				<key>Plants</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Cooking</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
 
 
 
