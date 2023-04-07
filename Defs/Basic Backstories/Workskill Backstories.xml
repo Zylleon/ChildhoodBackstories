@@ -258,7 +258,7 @@
 	<ZCB.ZCBackstoryDef>
 		<defName>ZCB_TunnelKid</defName>
 		<title>tunnel kid</title>
-		<titleShort>tunnel</titleShort>
+		<titleShort>tunneler</titleShort>
 		<baseDesc>[PAWN_nameDef] spent much of [PAWN_possessive] time underground, working in the mines. [PAWN_pronoun] loved every minute of it.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>

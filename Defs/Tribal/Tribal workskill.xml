@@ -103,7 +103,7 @@
 		<defName>ZCB_Gatherer</defName>
 		<title>gatherer</title>
 		<titleShort>gatherer</titleShort>
-		<baseDesc>[PAWN_pronoun] gathered roots and berries to help feed her tribe.</baseDesc>
+		<baseDesc>[PAWN_nameDef] gathered roots and berries to help feed [PAWN_possessive] tribe.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
@@ -131,6 +131,37 @@
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
 
+
+
+<!-- storyteller -->
+	<ZCB.ZCBackstoryDef parentName="ZCB_TribalChild">
+		<defName>ZCB_Storyteller</defName>
+		<title>storyteller</title>
+		<titleShort>storyteller</titleShort>
+		<baseDesc>[PAWN_nameDef] loved telling stories, inventing new works with [PAWN_possessive] imagination. [PAWN_pronoun] frequently used this talent to get out of doing chores.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<requiredPassions>
+			<li>Social</li>
+		</requiredPassions>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Intellect</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+	</ZCB.ZCBackstoryDef>
 
 
 
