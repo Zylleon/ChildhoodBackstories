@@ -13,6 +13,7 @@
 			<li>ZCB</li> 
 			<li>ZCB_NaturalMeditation</li>
 		</spawnCategories>
+		<commonality>3</commonality>
 		<maxTechLevel>Neolithic</maxTechLevel>
 		<colonySize>4~999</colonySize>
 		<requiredSkills>
@@ -60,6 +61,7 @@
 		<titleShort>hunter</titleShort>
 		<baseDesc>[PAWN_nameDef] wasn't very skilled with a bow, but [PAWN_pronoun] still managed to successfully hunt, helping feed [PAWN_possessive] tribe.</baseDesc>
 		<slot>Childhood</slot>
+		<commonality>2</commonality>
 		<spawnCategories>
 			<li>ZCB</li> 							<!-- required -->
 			<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus -->
@@ -105,6 +107,7 @@
 		<titleShort>gatherer</titleShort>
 		<baseDesc>[PAWN_nameDef] gathered roots and berries to help feed [PAWN_possessive] tribe.</baseDesc>
 		<slot>Childhood</slot>
+		<commonality>1.5</commonality>
 		<spawnCategories>
 			<li>ZCB</li> 
 			<li>ZCB_NaturalMeditation</li>
@@ -138,7 +141,7 @@
 		<defName>ZCB_Storyteller</defName>
 		<title>storyteller</title>
 		<titleShort>storyteller</titleShort>
-		<baseDesc>[PAWN_nameDef] loved telling stories, inventing new works with [PAWN_possessive] imagination. [PAWN_pronoun] frequently used this talent to get out of doing chores.</baseDesc>
+		<baseDesc>[PAWN_nameDef] loved telling stories, inventing new worlds with [PAWN_possessive] imagination and enthralling her peers around the campfire. [PAWN_pronoun] frequently used this talent to get out of doing chores.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
@@ -148,6 +151,12 @@
 		<requiredPassions>
 			<li>Social</li>
 		</requiredPassions>
+		<requiredSkills>
+			<li>
+				<name>Social</name>
+				<minValue>3</minValue>
+			</li>
+		</requiredSkills>
 		<skillGains>
 			<li>
 				<key>Social</key>

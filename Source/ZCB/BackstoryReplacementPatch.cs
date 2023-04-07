@@ -21,7 +21,8 @@ namespace ZCB
                 ZCBackstoryDef backstory = ZCBDefOf.ZCB_ColonyChild;
                 if (!backstories.NullOrEmpty())
                 {
-                    backstory = backstories.RandomElement();
+                    //backstory = backstories.RandomElement();
+                    backstory = backstories.RandomElementByWeight(bk => bk.commonality);
                 }
 
                 pawn.story.Childhood = backstory;

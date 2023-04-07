@@ -51,6 +51,7 @@
 		<spawnCategories>
 			<li>ZCB</li> 
 		</spawnCategories>
+		<commonality>5</commonality>
 		<requiredRecords>
 			<li>
 				<name>TimeAsColonistOrColonyAnimal</name>

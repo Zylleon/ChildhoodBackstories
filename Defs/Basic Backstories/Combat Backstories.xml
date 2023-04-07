@@ -9,6 +9,7 @@
 		<baseDesc>[PAWN_nameDef] was exposed to the harsh realities of battle at a young age. 
 \n[PAWN_pronoun] is skilled in combat, but the trauma has stunted [PAWN_possessive] social skills.</baseDesc>
 		<slot>Childhood</slot>
+		<commonality>3</commonality>
 		<requiredRecords>
 			<li>
 				<name>KillsHumanlikes</name>
@@ -74,6 +75,7 @@
 		<spawnCategories>
 			<li>ZCB</li> 
 		</spawnCategories>
+		<commonality>5</commonality>
 		<requiredRecords>
 			<li>
 				<name>KillsHumanlikes</name>

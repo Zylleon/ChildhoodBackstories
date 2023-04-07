@@ -48,6 +48,7 @@
 		<spawnCategories>
 			<li>ZCB</li> 
 		</spawnCategories>
+		<commonality>3</commonality>
 		<requiredRecords>
 			<li>
 				<name>OperationsPerformed</name>
@@ -151,6 +152,7 @@
 		<titleShort>cook</titleShort>
 		<baseDesc>[PAWN_nameDef] helped in the kitchen, chopping vegetables and preparing simple meals for the colony. [PAWN_pronoun] learned how to make delicious meals efficiently while avoiding food poisoning.</baseDesc>
 		<slot>Childhood</slot>
+		<commonality>2</commonality>
 		<spawnCategories>
 			<li>ZCB</li> 
 		</spawnCategories>
@@ -262,10 +264,9 @@
 		<baseDesc>[PAWN_nameDef] spent much of [PAWN_possessive] time underground, working in the mines. [PAWN_pronoun] loved every minute of it.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>ZCB</li> 							<!-- required -->
-			<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus -->
+			<li>ZCB</li> 					
 		</spawnCategories>
-		
+		<commonality>1.5</commonality>
 		<!-- new tags start here -->
 		<requiredRecords>
 			<li>

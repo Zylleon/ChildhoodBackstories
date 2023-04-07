@@ -10,7 +10,7 @@ namespace ZCB
 {
     public class ZCBackstoryDef : BackstoryDef
     {
-
+        public float commonality = 1f;
         public TechLevel minTechLevel = TechLevel.Animal;
         public TechLevel maxTechLevel = TechLevel.Ultra;
         public List<ZCBReq> requiredRecords;

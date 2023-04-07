@@ -12,6 +12,7 @@
 		<spawnCategories>
 			<li>ZCB</li> 
 		</spawnCategories>
+		<commonality>5</commonality>
 		<requiredRecords>
 			<li>
 				<name>TimeOnFire</name>
@@ -40,6 +41,7 @@
 		<spawnCategories>
 			<li>ZCB</li> 
 		</spawnCategories>
+		<commonality>5</commonality>
 		<recordRatios>
 			<li>		<!-- spent at least 10% of their time in prison -->
 				<numerator>TimeAsPrisoner</numerator>
@@ -77,6 +79,7 @@
 		<spawnCategories>
 			<li>ZCB</li> 
 		</spawnCategories>
+		<commonality>100</commonality>		<!-- this should almost always be picked when the child qualifies -->
 		<colonySize>1~1</colonySize>
 		<skillGains>		<!-- gains in most skills, loss in social -->
 			<li>
@@ -137,6 +140,7 @@
 		<spawnCategories>
 			<li>ZCB</li> 
 		</spawnCategories>
+		<commonality>5</commonality>
 		<requiredRecords>
 			<li>
 				<name>KillsHumanlikes</name>
@@ -174,6 +178,7 @@
 			<li>ZCB</li> 							
 		</spawnCategories>
 		
+		<commonality>10</commonality>
 		<father>Dead</father>
 		<mother>Dead</mother>
 

@@ -7,7 +7,7 @@
 		<defName>ZCB_TribeOrphan</defName>
 		<title>orphan</title>
 		<titleShort>tribal</titleShort>
-		<baseDesc>Growing up an orphan in a small tribe, [PAWN_nameDef] loved proving [PAWN_objective]self in a fight. [PAWN_pronoun] also learned the basics of farming and cooking, so that [PAWN_pronoun] would never go hungry again.</baseDesc>
+		<baseDesc>Growing up an orphan in a small tribe, [PAWN_nameDef] loved proving [PAWN_objective]self in a fight. [PAWN_pronoun] also learned the basics of gathering edible plants and cooking them into delicious meals, so that [PAWN_pronoun] would never go hungry again.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 							<!-- required -->
@@ -15,6 +15,7 @@
 		</spawnCategories>
 		
 		<!-- new tags start here -->
+		<commonality>10</commonality>
 		<maxTechLevel>Neolithic</maxTechLevel>
 		<father>Absent, Dead</father>
 		<mother>Absent, Dead</mother>

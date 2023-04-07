@@ -7,6 +7,7 @@
 		<titleShort>tribal</titleShort>
 		<baseDesc>[PAWN_nameDef] grew up in our tribe.</baseDesc>
 		<slot>Childhood</slot>
+		<commonality>0.001</commonality>				<!-- this should almost never be picked if the child qualifies for anything else -->
 		<spawnCategories>
 			<li>ZCB</li> 
 			<li>ZCB_NaturalMeditation</li>
