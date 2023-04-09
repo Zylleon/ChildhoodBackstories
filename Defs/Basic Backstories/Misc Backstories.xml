@@ -269,5 +269,38 @@
 	</ZCB.ZCBackstoryDef>
 
 
+<!-- tragic nurse -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_TragicNurse</defName>
+		<title>tragic nurse</title>
+		<titleShort>nurse</titleShort>
+		<baseDesc>After the death of [PAWN_possessive] mother, [PAWN_nameDef] started studying medicine. [PAWN_pronoun] vowed that no other child would suffer the same grief.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 							<!-- required -->
+		</spawnCategories>
+		<!-- new tags start here -->
+		<commonality>3.5</commonality>		<!-- this one is kinda specific -->
+		<mother>Dead</mother>
+		<colonySize>1~99</colonySize>
+		<requiredRecords>
+			<li>
+				<name>TimesTendedOther</name>
+				<minValue>20</minValue>
+			</li>
+		</requiredRecords>
+		<requiredPassions>
+			<li>Medicine</li>
+		</requiredPassions>
+		<!-- new tags end here-->
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>5</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
 
 </Defs>
