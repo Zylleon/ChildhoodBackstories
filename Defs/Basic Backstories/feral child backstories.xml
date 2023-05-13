@@ -14,7 +14,7 @@ Most of these should enable natural meditation focus.
 		<defName>ZCB_FeralChild</defName>
 		<title>feral child</title>
 		<titleShort>feral</titleShort>
-		<baseDesc>[PAWN_nameDef] was lef tto survive on [PAWN_possessive] own after some trauma that [PAWN_pronoun] refuses to talk about. [PAWN_pronoun] learned to appreciate the nature that protected and cared for [PAWN_objective].</baseDesc>
+		<baseDesc>[PAWN_nameDef] was left to survive on [PAWN_possessive] own after some trauma that [PAWN_pronoun] refuses to talk about. [PAWN_pronoun] learned to appreciate the nature that protected and cared for [PAWN_objective].</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 							<!-- required -->

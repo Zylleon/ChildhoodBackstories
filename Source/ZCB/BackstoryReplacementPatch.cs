@@ -33,6 +33,13 @@ namespace ZCB
                         pawn.skills.GetSkill(skillGain.Key).Level += skillGain.Value;
                     }
                 }
+
+                if(pawn.story.Adulthood == ZCBDefOf.Colonist97 || pawn.story.Adulthood == ZCBDefOf.TribeMember57)
+                {
+                    pawn.story.Adulthood = null;
+                }
+
+
             }
 
         }
