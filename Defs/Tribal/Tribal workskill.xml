@@ -173,5 +173,206 @@
 	</ZCB.ZCBackstoryDef>
 
 
+<!-- Mining -->
+<ZCB.ZCBackstoryDef>
+	<defName>ZCB_TunnelKid2</defName>
+	<title>tunnel kid</title>
+	<titleShort>tunneller</titleShort>
+	<baseDesc>[PAWN_nameDef] spent much of [PAWN_possessive] childhood underground, helping to expand [PAWN_possessive] tribe's caves. [PAWN_possessive] loved the work, and rarely went outside or saw the sun.</baseDesc>
+	<slot>Childhood</slot>
+	<spawnCategories>
+		<li>ZCB</li> 					<!-- required -->
+		<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus, use for tribal backstories -->
+	</spawnCategories>
+	
+	<!-- new tags start here -->
+	<commonality>1</commonality>
+	<maxTechLevel>Neolithic</maxTechLevel>
+	<requiredRecords>
+		<li>
+			<name>PlantsHarvested</name>
+			<maxValue>50</maxValue>
+		</li>
+	</requiredRecords>
+	<recordRatios>
+		<li>		<!-- spent at least 10% of their time in prison -->
+			<numerator>TimeAsPrisoner</numerator>
+			<denominator>TimeAsColonistOrColonyAnimal</denominator>
+			<ratio>0.1</ratio>
+		</li>
+	</recordRatios>
+	<requiredPassions>
+		<li>Mining</li>
+	</requiredPassions>
+	<!-- new tags end here-->
+	<skillGains>
+		<li>
+			<key>Mining</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Construction</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>-3</value>
+		</li>
+	</skillGains>
+</ZCB.ZCBackstoryDef>
+
+
+
+<!-- Art -->
+<ZCB.ZCBackstoryDef>
+	<defName>ZCB_TribalArtist</defName>
+	<title>artist</title>
+	<titleShort>artist</titleShort>
+	<baseDesc>[PAWN_nameDef] was fascinated by colors and shapes. [PAWN_pronoun] spent much of [PAWN_possessive] childhood drawing on every available surface, or planning out [PAWN_possessive] next creation.</baseDesc>
+	<slot>Childhood</slot>
+	<spawnCategories>
+		<li>ZCB</li> 					<!-- required -->
+		<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus, use for tribal backstories -->
+	</spawnCategories>
+	
+	<!-- new tags start here -->
+	<commonality>1</commonality>
+	<maxTechLevel>Neolithic</maxTechLevel>
+	<requiredPassions>
+		<li>Artistic</li>
+	</requiredPassions>
+	<!-- new tags end here-->
+	
+	<skillGains>
+		<li>
+			<key>Artistic</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Intellectual</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Animals</key>
+			<value>-2</value>
+		</li>
+	</skillGains>
+</ZCB.ZCBackstoryDef>
+
+
+
+<!-- Crafting -->
+<ZCB.ZCBackstoryDef>
+	<defName>ZCB_TribalCrafter</defName>
+	<title>crafter</title>
+	<titleShort>crafter</titleShort>
+	<baseDesc>[PAWN_nameDef] loved working with [PAWN_possessive] hands to create useful things. [PAWN_pronoun] also learned everything [PAWN_pronoun] could about gathering materials for [PAWN_possessive] crafts.</baseDesc>
+	<slot>Childhood</slot>
+	<spawnCategories>
+		<li>ZCB</li> 					<!-- required -->
+		<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus, use for tribal backstories -->
+	</spawnCategories>
+	
+	<!-- new tags start here -->
+	<commonality>1</commonality>
+	<maxTechLevel>Neolithic</maxTechLevel>
+	
+	<requiredPassions>
+		<li>Crafting</li>
+	</requiredPassions>
+	<!-- new tags end here-->
+	
+	<skillGains>
+		<li>
+			<key>Crafting</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>1</value>
+		</li>
+	</skillGains>
+</ZCB.ZCBackstoryDef>
+
+
+
+<!-- Cooking -->
+<ZCB.ZCBackstoryDef>
+	<defName>ZCB_TribalCook</defName>
+	<title>cook</title>
+	<titleShort>cook</titleShort>
+	<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] in the kitchen, helping to feed [PAWN_possessive] tribe and occasionally stealing snacks.</baseDesc>
+	<slot>Childhood</slot>
+	<spawnCategories>
+		<li>ZCB</li> 					<!-- required -->
+		<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus, use for tribal backstories -->
+	</spawnCategories>
+	
+	<!-- new tags start here -->
+	<commonality>1</commonality>
+	<maxTechLevel>Neolithic</maxTechLevel>
+	<requiredRecords>
+		<li>	
+			<name>MealsCooked</name>
+			<minValue>20</minValue>
+		</li>
+	</requiredRecords>
+	<requiredPassions>
+		<li>Cooking</li>
+	</requiredPassions>
+	<!-- new tags end here-->
+	<skillGains>
+		<li>
+			<key>Cooking</key>
+			<value>3</value>
+		</li>
+	</skillGains>
+	<workDisables>
+		<li>Intellectual</li>
+	</workDisables>
+</ZCB.ZCBackstoryDef>
+
+
+
+<!-- Melee & Construction -->
+<ZCB.ZCBackstoryDef>
+	<defName>ZCB_TribalBuilder</defName>
+	<title>builder</title>
+	<titleShort>builder</titleShort>
+	<baseDesc>[PAWN_nameDef] helped [PAWN_possessive] tribe with construction projects. [PAWN_possessive] favourite part was using a hammer.</baseDesc>
+	<slot>Childhood</slot>
+	<spawnCategories>
+		<li>ZCB</li> 					<!-- required -->
+		<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus, use for tribal backstories -->
+	</spawnCategories>
+	
+	<!-- new tags start here -->
+	<commonality>1</commonality>
+	<maxTechLevel>Neolithic</maxTechLevel>	
+	<requiredPassions>
+		<li>Construction</li>
+	</requiredPassions>
+	<!-- new tags end here-->
+	
+	<skillGains>
+		<li>
+			<key>Construction</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Melee</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Shooting</key>
+			<value>-2</value>
+		</li>
+	</skillGains>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Artistic</li>
+	</workDisables>
+</ZCB.ZCBackstoryDef>
+
 
 </Defs>

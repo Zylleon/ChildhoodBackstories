@@ -41,6 +41,10 @@ namespace ZCB
 
 
             }
+            //if(pawn.story.Childhood.spawnCategories.Contains("ZCB"))
+            //{
+            //    pawn.story.Adulthood = null;
+            //}
 
         }
     }
