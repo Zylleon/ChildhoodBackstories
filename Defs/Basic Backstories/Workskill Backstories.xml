@@ -43,7 +43,7 @@
 		<defName>ZCB_ChildDoctor</defName>
 		<title>child doctor</title>
 		<titleShort>doctor</titleShort>
-		<baseDesc>[PAWN_pronoun] was a medical prodigy, caring for the sick and injured and even performing surgery at a young age. Having seen so many injuries, [PAWN_pronoun] abhors violence.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was a medical prodigy, caring for the sick and injured and even performing surgery at a young age. Having seen so many injuries, [PAWN_pronoun] abhors violence.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 

@@ -53,13 +53,13 @@
 		<requiredRecords>
 			<li>
 				<name>ShotsFired</name>
-				<minValue>30</minValue>
+				<minValue>60</minValue>
 			</li>
 		</requiredRecords>
 		<skillGains>
 			<li>
 				<key>Shooting</key>
-				<value>4</value>
+				<value>8</value>
 			</li>
 		</skillGains>
 	</ZCB.ZCBackstoryDef>

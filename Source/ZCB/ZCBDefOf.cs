@@ -11,6 +11,9 @@ namespace ZCB
     public static class ZCBDefOf
     {
         public static BackstoryDef ColonyChild59;
+        public static BackstoryDef Child27;
+        public static BackstoryDef ChildTribal;
+        public static BackstoryDef TribeChild19;
 
         public static BackstoryDef Colonist97;
         public static BackstoryDef TribeMember57;
