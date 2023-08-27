@@ -51,9 +51,14 @@
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackstoryReplacementPatch.cs" />
+    <Compile Include="BackstorySettings.cs" />
     <Compile Include="RecordWorker_TimeAsWildMan.cs" />
     <Compile Include="ZCB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

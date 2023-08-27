@@ -14,6 +14,24 @@ namespace ZCB
         static ZCB()
         {
             new Harmony("zylle.ChildhoodBackstories").PatchAll();
+
+
+
+            if (BackstorySettings.allowedBackstories.EnumerableNullOrEmpty())
+            {
+                BackstorySettings.allowedBackstories = new Dictionary<string, bool>();
+            }
+            List<ZCBackstoryDef> list = DefDatabase<ZCBackstoryDef>.AllDefs.ToList();
+
+            foreach (ZCBackstoryDef story in list)
+            {
+                if (!BackstorySettings.allowedBackstories.ContainsKey(story.defName))
+                {
+                    BackstorySettings.allowedBackstories.Add(story.defName, true);
+                }
+            }
         }
+
+        
     }
 }

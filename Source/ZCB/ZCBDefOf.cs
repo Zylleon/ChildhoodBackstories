@@ -21,5 +21,6 @@ namespace ZCB
 
 
         public static ZCBackstoryDef ZCB_ColonyChild;
+        public static ZCBackstoryDef ZCB_TribalChild;
     }
 }
