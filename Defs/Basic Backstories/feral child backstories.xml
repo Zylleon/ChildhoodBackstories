@@ -56,6 +56,48 @@ Most of these should enable natural meditation focus.
 	</ZCB.ZCBackstoryDef>
 
 
+<!-- raised by muffalo  -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_FeralChild2</defName>
+		<title>feral child</title>
+		<titleShort>feral</titleShort>
+		<baseDesc>Abandoned by [PAWN_possessive] parents at an early age, [PAWN_nameDef] was raised by a herd of friendly muffalo. [PAWN_pronoun] cared for the herd, fighting off predators and tending to minor wounds.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 							<!-- required -->
+			<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus -->
+		</spawnCategories>
+		
+		<!-- new tags start here -->
+		<commonality>2</commonality>
+		<requiredRecords>
+			<li>		<!-- at least 3 hours as feral child -->
+				<name>ZCB_TimeAsWildMan</name>
+				<minValue>7500</minValue>
+			</li>
+		</requiredRecords>
+		<requiredPassions>
+			<li>Animals</li>
+		</requiredPassions>
+		<!-- new tags end here-->
+		
+		<skillGains>
+			<li>
+				<key>Animals</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Medical</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
 <!-- wild child -->
 	<ZCB.ZCBackstoryDef>
 		<defName>ZCB_WildChild</defName>
