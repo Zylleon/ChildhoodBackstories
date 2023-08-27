@@ -17,10 +17,11 @@ namespace ZCB
         public List<ZCBRecordRatio> recordRatios;
         public List<ZCBReq> requiredSkills;
         public List<string> requiredPassions;
+        public List<BackstoryTrait> requiredTraits;
         public IntRange colonySize = new IntRange(0, 9999);
         public FamilyStatusFlags father = FamilyStatusFlags.Any;
         public FamilyStatusFlags mother = FamilyStatusFlags.Any;
-
+        
 
         public bool IsAcceptable (Pawn pawn)
         {
@@ -114,9 +115,24 @@ namespace ZCB
             // community
             if (PawnsFinder.AllMaps_FreeColonistsSpawned.Count() < colonySize.min || PawnsFinder.AllMaps_FreeColonistsSpawned.Count() > colonySize.max)
             {
-                return false;
+                output = false;
             }
 
+            //traits
+            foreach (BackstoryTrait trait in requiredTraits)
+            {
+                if (!pawn.story.traits.HasTrait(trait.def))
+                {
+                    output = false;
+                }
+            }
+            foreach (BackstoryTrait trait in disallowedTraits)
+            {
+                if (pawn.story.traits.HasTrait(trait.def))
+                {
+                    output = false;
+                }
+            }
 
             List<RecordDef> allRecordDefs = DefDatabase<RecordDef>.AllDefsListForReading;
             if (!requiredRecords.NullOrEmpty())

@@ -224,5 +224,48 @@
 
 
 
+<!-- morbid curiosity -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_MorbidCuriosity</defName>
+		<title>morbid curiosity</title>
+		<titleShort>morbid</titleShort>
+		<baseDesc>[PAWN_pronoun] was always fascinated by the dead. [PAWN_pronoun] found any excuse to hang around the battlefield, burying the bodies of raiders after stealing their stuff. [PAWN_possessive] peers found this uncomfortable and ostracised [PAWN_ojective]. As [PAWN_pronoun] grew older, [PAWN_pronoun] increasingly preferred the company of the dead to that of the living.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<commonality>5</commonality>
+		<requiredRecords>
+			<li>
+				<name>BodiesStripped</name>
+				<minValue>20</minValue>
+			</li>
+			<li>
+				<name>CorpsesBuried</name>
+				<minValue>5</minValue>
+			</li>
+			<li>
+				<name>OperationsPerformed</name>
+				<minValue>2</minValue>
+			</li>
+		</requiredRecords>
+		<requiredTraits>
+			 <Psychopath>0</Psychopath>
+		</requiredTraits>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+	</ZCB.ZCBackstoryDef>
+	
 
 </Defs>
