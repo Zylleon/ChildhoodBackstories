@@ -119,20 +119,28 @@ namespace ZCB
             }
 
             //traits
-            foreach (BackstoryTrait trait in requiredTraits)
+            if(requiredTraits != null)
             {
-                if (!pawn.story.traits.HasTrait(trait.def))
+                foreach (BackstoryTrait trait in requiredTraits)
                 {
-                    output = false;
+                    if (!pawn.story.traits.HasTrait(trait.def))
+                    {
+                        output = false;
+                    }
                 }
             }
-            foreach (BackstoryTrait trait in disallowedTraits)
+            
+            if (disallowedTraits != null)
             {
-                if (pawn.story.traits.HasTrait(trait.def))
+                foreach (BackstoryTrait trait in disallowedTraits)
                 {
-                    output = false;
+                    if (pawn.story.traits.HasTrait(trait.def))
+                    {
+                        output = false;
+                    }
                 }
             }
+            
 
             List<RecordDef> allRecordDefs = DefDatabase<RecordDef>.AllDefsListForReading;
             if (!requiredRecords.NullOrEmpty())
