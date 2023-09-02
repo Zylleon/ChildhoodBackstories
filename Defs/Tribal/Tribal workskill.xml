@@ -7,7 +7,7 @@
 		<defName>ZCB_ShamanApprentice</defName>
 		<title>shaman's apprentice</title>
 		<titleShort>shaman</titleShort>
-		<baseDesc>[PAWN_pronoun] learned to care for all living things - including doing what's necessary to maintain the balance.</baseDesc>
+		<baseDesc>[PAWN_nameDef] learned to care for all living things - including doing what's necessary to maintain the balance.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
