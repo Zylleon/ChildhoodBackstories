@@ -35,4 +35,36 @@
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
 	
+	
+	<!-- Ascetic -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Ascetic</defName>
+		<title>ascetic child</title>
+		<titleShort>ascetic</titleShort>
+		<baseDesc>[PAWN_nameDef] was never interested in furniture with ostantatious filigree or fancy, gluttonous meals. However, [PAWN_pronoun] could still appreciate good craftsmanship when it counted.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>2</commonality>
+		<maxTechLevel>Neolithic</maxTechLevel>	
+		<requiredTraits>
+			 <Ascetic>0</Ascetic>
+		</requiredTraits>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>-5</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Cooking</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
 </Defs>

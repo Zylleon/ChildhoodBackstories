@@ -137,4 +137,51 @@
 			</li>
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
+	
+	
+	
+	
+
+<!-- Mad Prodogy -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_MadProdogy</defName>
+		<title>mad prodogy</title>
+		<titleShort>prodogy</titleShort>
+		<baseDesc>[PAWN_nameDef]was an unstable prodogy. He applied his genius to the arts, and frequently broke under the pressure from his chaotic mind.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<commonality>3</commonality>
+		<requiredTraits>
+			 <TorturedArtist>0</TorturedArtist>
+			 <TooSmart>0</TooSmart>
+		</requiredTraits>
+		<requiredRecords>
+			<li>
+				<name>TimesInMentalState</name>
+				<minValue>3</minValue>
+			</li>
+		</requiredRecords>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Cooking</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	
+
+	
+	
 </Defs>
