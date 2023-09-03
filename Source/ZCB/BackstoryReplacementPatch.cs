@@ -33,6 +33,23 @@ namespace ZCB
                         pawn.skills.GetSkill(skillGain.Key).Level += skillGain.Value;
                     }
                 }
+                if(backstory.forcedTraits != null)
+                {
+                    List<BackstoryTrait> forcedTraits = backstory.forcedTraits;
+                    for (int i = 0; i < forcedTraits.Count; i++)
+                    {
+                        BackstoryTrait te2 = forcedTraits[i];
+                        if (te2.def == null)
+                        {
+                            Log.Error("Null forced trait def on " + pawn.story.Childhood);
+                        }
+                        else 
+                        {
+                            pawn.story.traits.GainTrait(new Trait(te2.def, te2.degree));
+                        }
+                    }
+                }
+
 
                 if(pawn.story.Adulthood == ZCBDefOf.Colonist97 || pawn.story.Adulthood == ZCBDefOf.TribeMember57)
                 {
