@@ -70,7 +70,7 @@
 	
 	
 <!-- Brawler -->
-<ZCB.ZCBackstoryDef>
+	<ZCB.ZCBackstoryDef>
 		<defName>ZCB_TribalBrawler</defName>
 		<title>brawler</title>
 		<titleShort>brawler</titleShort>
@@ -109,7 +109,7 @@
 
 
 <!-- Fast learner -->
-<ZCB.ZCBackstoryDef>
+	<ZCB.ZCBackstoryDef>
 		<defName>ZCB_Scavenger</defName>
 		<title>scavenger</title>
 		<titleShort>scavenger</titleShort>
@@ -136,6 +136,45 @@
 			<li>
 				<key>Social</key>
 				<value>-2</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+<!-- Tortured Architect -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_TorturedArchitect</defName>
+		<title>tortured architecttortured architect</title>
+		<titleShort>architect</titleShort>
+		<baseDesc>[PAWN_nameDef] was tortured by visions of architectural grandeur that his tribe could never live up to.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>2</commonality>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<requiredTraits>
+			<TorturedArtist>0</TorturedArtist>
+		</requiredTraits>	
+		<requiredPassions>
+			<li>Construction</li>
+		</requiredPassions>
+		<workDisables>
+			<li>DumbLabor</li>
+		</workDisables>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>6</value>
+			</li>
+			<li>
+				<key>Artistic</key>
+				<value>2</value>
 			</li>
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
