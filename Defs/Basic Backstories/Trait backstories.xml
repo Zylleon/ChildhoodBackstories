@@ -67,9 +67,9 @@
 <!-- Gourmand -->
 	<ZCB.ZCBackstoryDef>
 		<defName>ZCB_Gourmand</defName>
-		<title>food thief</title>
-		<titleShort>thief</titleShort>
-		<baseDesc>[PAWN_nameDef] always had a love for food. [PAWN_pronoun] spent [PAWN_possessive] spare time hanging around the kithen, pilfering snacks and learning the secrets of cooking a good meal.</baseDesc>
+		<title>gourmand</title>
+		<titleShort>gourmand</titleShort>
+		<baseDesc>[PAWN_nameDef] always had a love for food. [PAWN_pronoun] spent [PAWN_possessive] spare time hanging around the kitchen, pilfering snacks and learning the secrets of cooking a good meal.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
