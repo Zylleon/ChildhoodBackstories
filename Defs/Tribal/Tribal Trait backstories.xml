@@ -105,4 +105,40 @@
 			</li>
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
+	
+
+
+<!-- Fast learner -->
+<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Scavenger</defName>
+		<title>scavenger</title>
+		<titleShort>scavenger</titleShort>
+		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] childhood learning as much as [PAWN_pronoun] could about everything, making [PAWN_objective] a bit eccentric to the rest of [PAWN_possessive] tribe. [PAWN_pronoun] was especially interested in disassembling old mechs to see how they are made, with the hope of advancing technology for [PAWN_possessive] tribe.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>2</commonality>
+		<maxTechLevel>Neolithic</maxTechLevel>	
+		<requiredTraits>
+			<FastLearner>0</FastLearner>
+		</requiredTraits>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
 </Defs>
