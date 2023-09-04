@@ -267,5 +267,208 @@
 		</workDisables>
 	</ZCB.ZCBackstoryDef>
 	
+<!-- ================================== HEALTH ================================== -->
+<!-- scarred veteran -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_ScarredVeteran</defName>
+		<title>scarred veteran</title>
+		<titleShort>scarred</titleShort>
+		<baseDesc>[PAWN_pronoun] reached adulthood with [PAWN_possessive] mind intact, but not {PAWN_possessive] body.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<commonality>3</commonality>
+		<bodyPartsMissing>3~999</bodyPartsMissing>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+<!-- surgery victim -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_SurgeryVictim</defName>
+		<title>surgery victim</title>
+		<titleShort>victim</titleShort>
+		<baseDesc>[PAWN_pronoun] distrusts doctors, as every hospital visit seems to result in a new artificial part - [PAWN_pronoun] would much prefer to stay intact. When not under the knife, [PAWN_nameDef] enjoyed spending time in nature.\n\nAdds trait: Body purist</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>1.5</commonality>
+		<bodyPartsReplaced>2~999</bodyPartsReplaced>
+		<forcedTraits>
+			<BodyPurist>0</BodyPurist>
+		</forcedTraits>
+		<disallowedTraits>
+			<Transhumanist>0</Transhumanist>
+		</disallowedTraits>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>-3</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+<!-- amputee -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Amputee</defName>
+		<title>amputee</title>
+		<titleShort>amputee</titleShort>
+		<baseDesc>[PAWN_pronoun] was distraught the first time [PAWN_pronoun] had to replace one of [PAWN_possessive] natural body parts, but soon grew to appreciate the replacement. {PAWN_pronoun] looks forward to getting more replacement parts for the ones [PAWN_pronoun] is still missing.\n\nAdds trait: Transhumanist</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<commonality>1.5</commonality>
+		<bodyPartsReplaced>1~999</bodyPartsReplaced>
+		<bodyPartsMissing>1~999</bodyPartsMissing>
+		<forcedTraits>
+			<Transhumanist>0</Transhumanist>
+		</forcedTraits>
+		<disallowedTraits>
+			<BodyPurist>0</BodyPurist>
+		</disallowedTraits>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>-1</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
 
+	
+<!-- butchered butcher -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_ButcheredButcher</defName>
+		<title>butchered butcher</title>
+		<titleShort>butchered</titleShort>
+		<baseDesc>Having been under the knife several times, [PAWN_nameDef] is quite comfortable with butchery of both animals and people.\n\nAdds trait: Psychopath</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<commonality>1.5</commonality>
+		<requiredRecords>
+			<li>
+				<name>OperationsReceived</name>
+				<minValue>2</minValue>
+			</li>
+		</requiredRecords>
+		<bodyPartsReplaced>1~999</bodyPartsReplaced>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+		<disallowedTraits>
+			<BodyPurist>0</BodyPurist>
+		</disallowedTraits>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Cooking</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+<!-- wimpy transhumanist -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_WimpyTranshumanist</defName>
+		<title>wimpy transhumanist</title>
+		<titleShort>wimp</titleShort>
+		<baseDesc>[PAWN_nameDef] discovered that each new artificial part reduced his ability to feeel pain. [PAWN_pronoun] made it his mission to replace as much as possible of [PAWN_possessive] weak flesh.\n\nAdds trait: Transhumanist</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<commonality>3</commonality>
+		<bodyPartsReplaced>1~999</bodyPartsReplaced>
+		<requiredTraits>
+			 <Wimp>0</Wimp>
+		</requiredTraits>
+		<forcedTraits>
+			<Transhumanist>0</Transhumanist>
+		</forcedTraits>
+		<disallowedTraits>
+			<BodyPurist>0</BodyPurist>
+		</disallowedTraits>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+<!-- transhumanist -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Transhumanist</defName>
+		<title>transhumanist</title>
+		<titleShort>transhumanist</titleShort>
+		<baseDesc>[PAWN_nameDef] felt that [PAWN_possessive] arficial parts were improvements over [PAWN_possessive] natural flesh.\n\nAdds trait: Transhumanist</baseDesc>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<commonality>2</commonality>
+		<bodyPartsReplaced>2~999</bodyPartsReplaced>
+		<forcedTraits>
+			<Transhumanist>0</Transhumanist>
+		</forcedTraits>
+		<disallowedTraits>
+			<BodyPurist>0</BodyPurist>
+		</disallowedTraits>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>5</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	
 </Defs>

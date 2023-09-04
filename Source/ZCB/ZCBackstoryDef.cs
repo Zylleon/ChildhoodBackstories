@@ -21,14 +21,14 @@ namespace ZCB
         public IntRange colonySize = new IntRange(0, 9999);
         public FamilyStatusFlags father = FamilyStatusFlags.Any;
         public FamilyStatusFlags mother = FamilyStatusFlags.Any;
-        
+        public IntRange bodyPartsMissing = new IntRange(0, 999);
+        public IntRange bodyPartsReplaced = new IntRange(0, 999);
 
         public bool IsAcceptable (Pawn pawn)
         {
             bool output = true;
-            //Log.Message("EVALUATING " + this.defName);
-            
-            if(Faction.OfPlayer.def.techLevel < minTechLevel)
+
+            if (Faction.OfPlayer.def.techLevel < minTechLevel)
             {
                 output = false;
             }
@@ -140,8 +140,19 @@ namespace ZCB
                     }
                 }
             }
-            
 
+            // health
+            if(bodyPartsMissing.min > pawn.health.hediffSet.GetMissingPartsCommonAncestors().Count() || bodyPartsMissing.max < pawn.health.hediffSet.GetMissingPartsCommonAncestors().Count())
+            {
+                output = false;
+            }
+            if (bodyPartsReplaced.min > GeneUtility.AddedAndImplantedPartsWithXenogenesCount(pawn) || bodyPartsReplaced.max < GeneUtility.AddedAndImplantedPartsWithXenogenesCount(pawn))
+            {
+                output = false;
+            }
+
+
+            // records
             List<RecordDef> allRecordDefs = DefDatabase<RecordDef>.AllDefsListForReading;
             if (!requiredRecords.NullOrEmpty())
             {
