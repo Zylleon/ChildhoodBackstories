@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+<!-- Sickly Child  -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_SicklyChild</defName>
+		<title>sickly child</title>
+		<titleShort>sickly</titleShort>
+		<baseDesc>[PAWN_nameDef] was a sickly child. [PAWN_pronoun] spent days on end recuperating in the hospital, where [PAWN_pronoun] befriended all the nurses and picked up some basic medical training.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<commonality>2</commonality>
+		<minTechLevel>Industrial</minTechLevel>
+		<requiredTraits>
+			 <Immunity>-1</Immunity>
+		</requiredTraits>
+		<requiredRecords>
+			<li>
+				<name>TimeInBedForMedicalReasons</name>
+				<minValue>120000</minValue>
+			</li>
+		</requiredRecords>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+		
+
+	
+	
+</Defs>

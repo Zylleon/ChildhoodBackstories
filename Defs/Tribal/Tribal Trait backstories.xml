@@ -144,7 +144,7 @@
 <!-- Tortured Architect -->
 	<ZCB.ZCBackstoryDef>
 		<defName>ZCB_TorturedArchitect</defName>
-		<title>tortured architecttortured architect</title>
+		<title>tortured architect</title>
 		<titleShort>architect</titleShort>
 		<baseDesc>[PAWN_nameDef] was tortured by visions of architectural grandeur that his tribe could never live up to.</baseDesc>
 		<slot>Childhood</slot>
@@ -152,7 +152,7 @@
 			<li>ZCB</li> 
 			<li>ZCB_NaturalMeditation</li>
 		</spawnCategories>
-		<commonality>2</commonality>
+		<commonality>3</commonality>
 		<maxTechLevel>Neolithic</maxTechLevel>
 		<requiredTraits>
 			<TorturedArtist>0</TorturedArtist>
@@ -161,7 +161,7 @@
 			<li>Construction</li>
 		</requiredPassions>
 		<workDisables>
-			<li>DumbLabor</li>
+			<li>ManualDumb</li>
 		</workDisables>
 		<skillGains>
 			<li>
