@@ -147,7 +147,7 @@
 		<defName>ZCB_MadProdogy</defName>
 		<title>mad prodogy</title>
 		<titleShort>prodogy</titleShort>
-		<baseDesc>[PAWN_nameDef]was an unstable prodogy. He applied his genius to the arts, and frequently broke under the pressure from his chaotic mind.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was an unstable prodogy. He applied his genius to the arts, and frequently broke under the pressure from his chaotic mind.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
@@ -181,7 +181,99 @@
 	
 	
 	
-
+<!-- Undergrounder -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Undergrounder</defName>
+		<title>tunnel kid</title>
+		<titleShort>tunnel kid</titleShort>
+		<baseDesc>[PAWN_nameDef] loved exploring and expanding the tunnels that extended from his home. [PAWN_pronoun] enjoyed any kind of digging, even helping plow and till [PAWN_possessive] colony's farms.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<commonality>2</commonality>
+		<requiredTraits>
+			 <Undergrounder>0</Undergrounder>
+		</requiredTraits>
+		<requiredPassions>
+			<li>Mining</li>
+		</requiredPassions>
+		<skillGains>
+			<li>
+				<key>Mining</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>-3</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	<!-- Bloodlust melee -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Bully</defName>
+		<title>bully</title>
+		<titleShort>bully</titleShort>
+		<baseDesc>[PAWN_nameDef] enjoyed hurting people, often picking on the smaller children. [PAWN_pronoun] loved utterly crushing [PAWN_possessive] unfortunate targets.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<commonality>3</commonality>
+		<requiredTraits>
+			 <Bloodlust>0</Bloodlust>
+		</requiredTraits>
+		<requiredPassions>
+			<li>Melee</li>
+		</requiredPassions>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>-3</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	
+	<!-- Bloodlust ranged -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Assassin</defName>
+		<title>assassin</title>
+		<titleShort>assassin</titleShort>
+		<baseDesc>[PAWN_nameDef] loved watching [PAWN_possessive] enemies die through a scope. Or {PAWN_possessive] friends, [PAWN_pronoun] wasn't picky.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<commonality>2.5</commonality>
+		<requiredTraits>
+			 <Bloodlust>0</Bloodlust>
+		</requiredTraits>
+		<requiredPassions>
+			<li>Shooting</li>
+		</requiredPassions>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>6</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>-4</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
 	
 	
 </Defs>
