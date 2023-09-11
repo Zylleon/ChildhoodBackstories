@@ -229,7 +229,7 @@
 		<defName>ZCB_MorbidCuriosity</defName>
 		<title>morbid curiosity</title>
 		<titleShort>morbid</titleShort>
-		<baseDesc>[PAWN_pronoun] was always fascinated by the dead. [PAWN_pronoun] found any excuse to hang around the battlefield, burying the bodies of raiders after stealing their stuff. [PAWN_possessive] peers found this uncomfortable and ostracised [PAWN_ojective]. As [PAWN_pronoun] grew older, [PAWN_pronoun] increasingly preferred the company of the dead to that of the living.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was always fascinated by the dead. [PAWN_pronoun] found any excuse to hang around the battlefield, burying the bodies of raiders after stealing their stuff. [PAWN_possessive] peers found this uncomfortable and ostracised [PAWN_objective]. As [PAWN_pronoun] grew older, [PAWN_pronoun] increasingly preferred the company of the dead to that of the living.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
@@ -273,7 +273,7 @@
 		<defName>ZCB_ScarredVeteran</defName>
 		<title>scarred veteran</title>
 		<titleShort>scarred</titleShort>
-		<baseDesc>[PAWN_pronoun] reached adulthood with [PAWN_possessive] mind intact, but not {PAWN_possessive] body.</baseDesc>
+		<baseDesc>[PAWN_nameDef] reached adulthood with [PAWN_possessive] mind intact, but not [PAWN_possessive] body.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
@@ -302,7 +302,7 @@
 		<defName>ZCB_SurgeryVictim</defName>
 		<title>surgery victim</title>
 		<titleShort>victim</titleShort>
-		<baseDesc>[PAWN_pronoun] distrusts doctors, as every hospital visit seems to result in a new artificial part - [PAWN_pronoun] would much prefer to stay intact. When not under the knife, [PAWN_nameDef] enjoyed spending time in nature.\n\nAdds trait: Body purist</baseDesc>
+		<baseDesc>[PAWN_nameDef] distrusts doctors, as every hospital visit seems to result in a new artificial part - [PAWN_pronoun] would much prefer to stay intact. When not under the knife, [PAWN_nameDef] enjoyed spending time in nature.\n\nAdds trait: Body purist</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
@@ -338,7 +338,7 @@
 		<defName>ZCB_Amputee</defName>
 		<title>amputee</title>
 		<titleShort>amputee</titleShort>
-		<baseDesc>[PAWN_pronoun] was distraught the first time [PAWN_pronoun] had to replace one of [PAWN_possessive] natural body parts, but soon grew to appreciate the replacement. {PAWN_pronoun] looks forward to getting more replacement parts for the ones [PAWN_pronoun] is still missing.\n\nAdds trait: Transhumanist</baseDesc>
+		<baseDesc>[PAWN_nameDef] was distraught the first time [PAWN_pronoun] had to replace one of [PAWN_possessive] natural body parts, but soon grew to appreciate the replacement. [PAWN_pronoun] looks forward to getting more replacement parts for the ones [PAWN_pronoun] is still missing.\n\nAdds trait: Transhumanist</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 

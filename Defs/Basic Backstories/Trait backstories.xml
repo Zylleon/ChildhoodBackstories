@@ -7,7 +7,7 @@
 		<defName>ZCB_UglyChild</defName>
 		<title>ugly child</title>
 		<titleShort>ugly</titleShort>
-		<baseDesc>[PAWN_pronoun] was quite an ugly child. [PAWN_pronoun] worked extra hard to make friends.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was quite an ugly child. [PAWN_pronoun] worked extra hard to make friends.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
@@ -33,7 +33,7 @@
 		<defName>ZCB_UglyChild2</defName>
 		<title>staggeringly ugly child</title>
 		<titleShort>ugly</titleShort>
-		<baseDesc>[PAWN_pronoun] was a staggeringly ugly child. [PAWN_pronoun] worked extra hard to make friends, baking treats for the rest of the colony to win favor.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was a staggeringly ugly child. [PAWN_pronoun] worked extra hard to make friends, baking treats for the rest of the colony to win favor.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
@@ -251,7 +251,7 @@
 		<defName>ZCB_Assassin</defName>
 		<title>assassin</title>
 		<titleShort>assassin</titleShort>
-		<baseDesc>[PAWN_nameDef] loved watching [PAWN_possessive] enemies die through a scope. Or {PAWN_possessive] friends, [PAWN_pronoun] wasn't picky.</baseDesc>
+		<baseDesc>[PAWN_nameDef] loved watching [PAWN_possessive] enemies die through a scope. Or [PAWN_possessive] friends, [PAWN_pronoun] wasn't picky.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
