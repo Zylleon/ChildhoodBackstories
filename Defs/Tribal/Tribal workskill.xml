@@ -371,4 +371,202 @@
 </ZCB.ZCBackstoryDef>
 
 
+<!-- child shaman -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_ChildShaman</defName>
+		<title>child shaman</title>
+		<titleShort>nurse</titleShort>
+		<baseDesc>[PAWN_nameDef] grew up taking care of the sick and injured.</baseDesc>
+		<slot>Childhood</slot>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<spawnCategories>
+			<li>ZCB</li> 							
+			<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus -->
+		</spawnCategories>
+		<requiredRecords>
+			<li>
+				<name>TimesTendedOther</name>
+				<minValue>20</minValue>
+			</li>
+		</requiredRecords>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>-1</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>-1</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+<!-- child doctor -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Healer</defName>
+		<title>child healer</title>
+		<titleShort>healer</titleShort>
+		<baseDesc>[PAWN_nameDef] was a medical prodigy, caring for the sick and injured of [PAWN_possessive] tribe and even performing surgery at a young age. Having seen so many injuries, [PAWN_pronoun] abhors violence.</baseDesc>
+		<slot>Childhood</slot>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<spawnCategories>
+			<li>ZCB</li> 							
+			<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus -->
+		</spawnCategories>
+		<commonality>3</commonality>
+		<requiredRecords>
+			<li>
+				<name>OperationsPerformed</name>
+				<minValue>1</minValue>
+			</li>
+		</requiredRecords>
+		<requiredPassions>
+			<li>Medicine</li>
+		</requiredPassions>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+	</ZCB.ZCBackstoryDef>
+
+	
+<!-- animal whisperer -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_AnimalWhisperer</defName>
+		<title>animal whisperer</title>
+		<titleShort>whisperer</titleShort>
+		<baseDesc>[PAWN_nameDef] took care of the colony's animals, tending to their neesd and persuading them to share their resources with [PAWN_possessive] tribe.</baseDesc>
+		<slot>Childhood</slot>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<spawnCategories>
+			<li>ZCB</li> 							
+			<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus -->
+		</spawnCategories>
+		<requiredRecords>
+			<li>
+				<name>TimesTendedOther</name>
+				<minValue>5</minValue>
+			</li>
+		</requiredRecords>
+		<requiredSkills>
+			<li>
+				<name>Animals</name>
+				<minValue>5</minValue>
+			</li>
+		</requiredSkills>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+<!-- child laborer -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_ChildLaborerTribal</defName>
+		<title>child laborer</title>
+		<titleShort>laborer</titleShort>
+		<baseDesc>[PAWN_nameDef] worked manual jobs around the settlement, building furniture and doing basic crafts.</baseDesc>
+		<slot>Childhood</slot>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<spawnCategories>
+			<li>ZCB</li> 							
+			<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus -->
+		</spawnCategories>
+		<requiredRecords>
+			<li>
+				<name>ThingsConstructed</name>
+				<minValue>20</minValue>
+			</li>
+			<li>
+				<name>ThingsCrafted</name>
+				<minValue>200</minValue>
+			</li>
+		</requiredRecords>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Artistic</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+	</ZCB.ZCBackstoryDef>
+
+
+<!-- tribal artist -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_TribalArtist2</defName>
+		<title>artist</title>
+		<titleShort>artist</titleShort>
+		<titleShortFemale>test</titleShortFemale>
+		<baseDesc>[PAWN_nameDef] loved art from a young age, spending hours drawing on the floor and painting with traditional dyes. However, [PAWN_pronoun] never learned to use [PAWN_possessive] skills in a practical way.</baseDesc>
+		<slot>Childhood</slot>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<spawnCategories>
+			<li>ZCB</li> 							
+			<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus -->
+		</spawnCategories>
+		<requiredSkills>
+			<li>
+				<name>Artistic</name>
+				<minValue>5</minValue>
+			</li>
+		</requiredSkills>
+		<requiredPassions>
+			<li>Artistic</li>
+		</requiredPassions>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>-3</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>-1</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
 </Defs>

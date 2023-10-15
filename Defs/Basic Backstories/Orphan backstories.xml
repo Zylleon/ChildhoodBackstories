@@ -10,7 +10,8 @@
 		<baseDesc>After losing both parents, [PAWN_nameDef] was frequently forced defend [PAWN_objective]self. [PAWN_pronoun] withdrew from society, finding solace in art.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>ZCB</li> 							
+			<li>ZCB</li> 					
+			<li>ZCB_NaturalMeditation</li> 					
 		</spawnCategories>
 		
 		<commonality>10</commonality>
@@ -57,7 +58,8 @@
 		<baseDesc>After the death of [PAWN_possessive] mother, [PAWN_nameDef] started studying medicine. [PAWN_pronoun] vowed that no other child would suffer the same grief.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>ZCB</li> 							<!-- required -->
+			<li>ZCB</li> 			
+			<li>ZCB_NaturalMeditation</li>
 		</spawnCategories>
 		<!-- new tags start here -->
 		<commonality>3.5</commonality>		<!-- this one is kinda specific -->
@@ -89,7 +91,8 @@
 		<baseDesc>After the death of [PAWN_possessive] father, [PAWN_nameDef] started studying medicine. [PAWN_pronoun] vowed that no other child would suffer the same grief.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>ZCB</li> 							<!-- required -->
+			<li>ZCB</li> 							<!-- required -->		
+			<li>ZCB_NaturalMeditation</li> 	
 		</spawnCategories>
 		<!-- new tags start here -->
 		<commonality>3.5</commonality>		<!-- this one is kinda specific -->

@@ -180,4 +180,35 @@
 	</ZCB.ZCBackstoryDef>
 	
 	
+	<!-- Bloodlust melee -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Barbarian</defName>
+		<title>barbarian</title>
+		<titleShort>barbarian</titleShort>
+		<baseDesc>[PAWN_nameDef] enjoyed hurting people, often getting into fights. [PAWN_pronoun] loved utterly crushing [PAWN_possessive] unfortunate targets.</baseDesc>
+		<slot>Childhood</slot>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<spawnCategories>
+			<li>ZCB</li> 							
+			<li>ZCB_NaturalMeditation</li> 			<!-- enables natural meditation focus -->
+		</spawnCategories>
+		<commonality>3</commonality>
+		<requiredTraits>
+			 <Bloodlust>0</Bloodlust>
+		</requiredTraits>
+		<requiredPassions>
+			<li>Melee</li>
+		</requiredPassions>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>6</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>-3</value>
+			</li>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
 </Defs>
