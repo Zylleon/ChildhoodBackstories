@@ -17,6 +17,7 @@ namespace ZCB
         public List<ZCBRecordRatio> recordRatios;
         public List<ZCBReq> requiredSkills;
         public List<string> requiredPassions;
+        public List<string> disallowedPassions;
         public List<BackstoryTrait> requiredTraits;
         public IntRange colonySize = new IntRange(0, 9999);
         public FamilyStatusFlags father = FamilyStatusFlags.Any;
@@ -189,6 +190,8 @@ namespace ZCB
                     }
                 }
             }
+
+            // skills and passions
             if (!requiredSkills.NullOrEmpty())
             {
                 foreach (ZCBReq reqS in requiredSkills)
@@ -205,12 +208,24 @@ namespace ZCB
                     }
                 }
             }
+
             if(!requiredPassions.NullOrEmpty())
             {
                 foreach(string skill in requiredPassions)
                 {
                     SkillDef skillDef = allSkillDefs.Where(r => r.defName == skill).FirstOrDefault();
                     if(pawn.skills.GetSkill(skillDef).passion == 0)
+                    {
+                        output = false;
+                    }
+                }
+            }
+            if (!disallowedPassions.NullOrEmpty())
+            {
+                foreach (string skill in disallowedPassions)
+                {
+                    SkillDef skillDef = allSkillDefs.Where(r => r.defName == skill).FirstOrDefault();
+                    if (pawn.skills.GetSkill(skillDef).passion != 0)
                     {
                         output = false;
                     }
