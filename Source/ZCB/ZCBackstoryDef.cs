@@ -24,6 +24,7 @@ namespace ZCB
         public FamilyStatusFlags mother = FamilyStatusFlags.Any;
         public IntRange bodyPartsMissing = new IntRange(0, 999);
         public IntRange bodyPartsReplaced = new IntRange(0, 999);
+        public Dictionary<SkillDef, int> passionGains = new Dictionary<SkillDef, int>();
 
         public bool IsAcceptable (Pawn pawn)
         {

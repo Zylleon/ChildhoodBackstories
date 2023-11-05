@@ -50,18 +50,25 @@ namespace ZCB
                     }
                 }
 
+                if (backstory.passionGains != null)
+                {
+                    foreach (KeyValuePair<SkillDef, int> passionGain in backstory.passionGains)
+                    {
+                        int passion = (int)pawn.skills.GetSkill(passionGain.Key).passion;
+                        passion += passionGain.Value;
+                        passion = Math.Min(Math.Max(passion, 0),2);
 
-                if(pawn.story.Adulthood == ZCBDefOf.Colonist97 || pawn.story.Adulthood == ZCBDefOf.TribeMember57)
+                        pawn.skills.GetSkill(passionGain.Key).passion = (Passion)passion;
+                    }
+                }
+
+                if (pawn.story.Adulthood == ZCBDefOf.Colonist97 || pawn.story.Adulthood == ZCBDefOf.TribeMember57)
                 {
                     pawn.story.Adulthood = null;
                 }
 
 
             }
-            //if(pawn.story.Childhood.spawnCategories.Contains("ZCB"))
-            //{
-            //    pawn.story.Adulthood = null;
-            //}
 
         }
     }

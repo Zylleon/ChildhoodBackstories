@@ -143,6 +143,7 @@
 		<titleShort>storyteller</titleShort>
 		<baseDesc>[PAWN_nameDef] loved telling stories, inventing new worlds with [PAWN_possessive] imagination and enthralling her peers around the campfire. [PAWN_pronoun] frequently used this talent to get out of doing chores.</baseDesc>
 		<slot>Childhood</slot>
+		<commonality>0.5</commonality>
 		<spawnCategories>
 			<li>ZCB</li> 
 			<li>ZCB_NaturalMeditation</li>
