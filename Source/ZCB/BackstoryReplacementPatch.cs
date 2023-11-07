@@ -14,7 +14,7 @@ namespace ZCB
     {
         static void Postfix(Pawn pawn, LifeStageDef previousLifeStage)
         {
-            if ((pawn.story.Childhood == ZCBDefOf.ColonyChild59 || pawn.story.Childhood == ZCBDefOf.Child27 || pawn.story.Childhood == ZCBDefOf.ChildTribal || pawn.story.Childhood == ZCBDefOf.TribeChild19) && previousLifeStage.developmentalStage.Juvenile())
+            if ((pawn.story.Childhood == ZCBDefOf.ColonyChild59 || pawn.story.Childhood == ZCBDefOf.Child27 || pawn.story.Childhood == ZCBDefOf.ChildTribal || pawn.story.Childhood == ZCBDefOf.TribeChild19) && previousLifeStage != null && previousLifeStage.developmentalStage.Juvenile())
             {
                 List<ZCBackstoryDef> backstories = DefDatabase<ZCBackstoryDef>.AllDefsListForReading;
                 backstories = backstories.Where(b => b.IsAcceptable(pawn) && b.spawnCategories.Contains("ZCB") && BackstorySettings.allowedBackstories[b.defName]).ToList();
