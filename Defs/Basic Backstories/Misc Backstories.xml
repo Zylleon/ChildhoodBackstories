@@ -141,11 +141,11 @@
 		<spawnCategories>
 			<li>ZCB</li> 
 		</spawnCategories>
-		<commonality>5</commonality>
+		<commonality>2</commonality>
 		<requiredRecords>
 			<li>
 				<name>KillsHumanlikes</name>
-				<minValue>5</minValue>
+				<minValue>15</minValue>
 			</li>
 			<li>
 				<name>TimesTendedOther</name>

@@ -512,6 +512,12 @@
 				<minValue>200</minValue>
 			</li>
 		</requiredRecords>
+		<requiredSkills>
+			<li>
+				<name>Intellectual</name>
+				<maxValue>2</maxValue>
+			</li>
+		</requiredSkills>
 		<skillGains>
 			<li>
 				<key>Crafting</key>
