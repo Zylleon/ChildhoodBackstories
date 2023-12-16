@@ -336,7 +336,7 @@
 		<defName>ZCB_WimpyTranshumanist</defName>
 		<title>wimpy transhumanist</title>
 		<titleShort>wimp</titleShort>
-		<baseDesc>[PAWN_nameDef] discovered that each new artificial part reduced his ability to feeel pain. [PAWN_pronoun] made it his mission to replace as much as possible of [PAWN_possessive] weak flesh.\n\nAdds trait: Transhumanist</baseDesc>
+		<baseDesc>[PAWN_nameDef] discovered that each new artificial part reduced [PAWN_possessive] ability to feel pain. [PAWN_pronoun] made it [PAWN_possessive] mission to replace as much as possible of [PAWN_possessive] weak flesh.\n\nAdds trait: Transhumanist</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
