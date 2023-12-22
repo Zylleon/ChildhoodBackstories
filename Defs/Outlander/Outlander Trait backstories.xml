@@ -116,12 +116,12 @@
 	
 	
 
-<!-- Mad Prodogy -->
+<!-- Mad Prodigy -->
 	<ZCB.ZCBackstoryDef>
 		<defName>ZCB_MadProdogy</defName>
-		<title>mad prodogy</title>
-		<titleShort>prodogy</titleShort>
-		<baseDesc>[PAWN_nameDef] was an unstable prodogy. He applied his genius to the arts, and frequently broke under the pressure from his chaotic mind.</baseDesc>
+		<title>mad prodigy</title>
+		<titleShort>prodigy</titleShort>
+		<baseDesc>[PAWN_nameDef] was an unstable prodigy. He applied his genius to the arts, and frequently broke under the pressure of his chaotic mind.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li> 
