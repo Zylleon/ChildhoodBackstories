@@ -4,6 +4,7 @@
   <author>Zylle</author>
   <supportedVersions>
 	<li>1.4</li>
+	<li>1.5</li>
   </supportedVersions>
   <packageId>zylle.ChildboodBackstories</packageId>
    <modDependencies>

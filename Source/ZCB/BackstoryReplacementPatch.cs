@@ -28,11 +28,13 @@ namespace ZCB
                 pawn.story.Childhood = backstory;
                 if (!backstory.skillGains.NullOrEmpty())
                 {
-                    foreach (KeyValuePair<SkillDef, int> skillGain in backstory.skillGains)
+                    foreach (SkillGain skillGain in backstory.skillGains)
                     {
-                        pawn.skills.GetSkill(skillGain.Key).Level += skillGain.Value;
+                        pawn.skills.GetSkill(skillGain.skill).Level += skillGain.amount;
                     }
                 }
+
+
                 if(backstory.forcedTraits != null)
                 {
                     List<BackstoryTrait> forcedTraits = backstory.forcedTraits;

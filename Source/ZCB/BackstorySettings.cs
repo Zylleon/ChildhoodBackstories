@@ -94,14 +94,22 @@ namespace ZCB
             stringBuilder.AppendLine();
 
             List<SkillDef> allDefsListForReading = DefDatabase<SkillDef>.AllDefsListForReading;
+
             for (int i = 0; i < allDefsListForReading.Count; i++)
             {
                 SkillDef skillDef = allDefsListForReading[i];
-                if (story.skillGains.ContainsKey(skillDef))
+                foreach (SkillGain skillGain in story.skillGains)
                 {
-                    stringBuilder.AppendLine(skillDef.skillLabel.CapitalizeFirst() + ":   " + story.skillGains[skillDef].ToString("+##;-##"));
+                    if (skillGain.skill == skillDef)
+                    {
+                        stringBuilder.AppendLine(skillDef.skillLabel.CapitalizeFirst() + ":   " + skillGain.amount.ToString("+##;-##"));
+                        break;
+                    }
                 }
             }
+
+
+
             if (story.DisabledWorkTypes.Any() || story.DisabledWorkGivers.Any())
             {
                 stringBuilder.AppendLine();
