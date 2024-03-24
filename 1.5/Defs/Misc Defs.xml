@@ -10,5 +10,13 @@
     <workerClass>ZCB.RecordWorker_TimeAsWildMan</workerClass>
   </RecordDef>
   
-  
+    <RecordDef>
+    <defName>ZCB_TimeReading</defName>
+    <label>time reading</label>
+    <description>Total time spent reading books.</description>
+    <type>Time</type>
+    <measuredTimeJobs>
+      <li>Reading</li>
+    </measuredTimeJobs>
+  </RecordDef>
 </Defs>
