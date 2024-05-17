@@ -461,5 +461,40 @@
 			<Crafting>-1</Crafting>
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
+	
+	
+<!-- lookout -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_TribalLookout</defName>
+		<title>lookout</title>
+		<titleShort>lookout</titleShort>
+		<titleShortFemale>test</titleShortFemale>
+		<baseDesc>[PAWN_nameDef] was assigned to watch over the animal herds when young, and keep an eye out for predators.  As [PAWN_pronoun] got older, [PAWN_pronoun] would chase the predators away with a bow.</baseDesc>
+		<slot>Childhood</slot>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<spawnCategories>
+			<li>ZCB</li> 							
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<requiredSkills>
+			<li>
+				<name>Animals</name>
+				<minValue>5</minValue>
+			</li>
+			<li>
+				<name>Shooting</name>
+				<minValue>5</minValue>
+			</li>
+		</requiredSkills>
+		<requiredPassions>
+			<li>Animals</li>
+		</requiredPassions>
+		<skillGains>
+			<Animals>4</Animals>
+			<Plants>1</Plants>
+			<Shooting>2</Shooting>
+			<Social>-1</Social>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
 
 </Defs>
