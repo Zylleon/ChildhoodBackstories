@@ -42,8 +42,74 @@
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
 
-
-
+<!-- bookworm -->
+<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Bookworm</defName>
+		<title>bookworm</title>
+		<titleShort>bookworm</titleShort>
+		<baseDesc>[PAWN_nameDef]'s parents started a small colony on a remote planet, so as a small child there wasn't much to do except read a ton of books. Now [PAWN_nameDef] loves book so much that [PAWN_pronoun] can't imagine doing without.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 							<!-- required -->
+		</spawnCategories>
+		<!-- new tags start here -->
+		<minTechLevel>Medieval</minTechLevel>
+		<commonality>1</commonality>
+		<father>Present</father>
+		<mother>Present</mother>
+		<colonySize>1~7</colonySize>
+		<requiredRecords>
+			<li>
+				<name>ZCB_TimeReading</name>
+				<minValue>560000</minValue>			<!-- about 9.3 days -->
+			</li>
+		</requiredRecords>
+		<passionGains>
+			<li>
+				<key>Intellectual</key>
+				<value>1</value>
+			</li>
+		</passionGains>
+		<!-- new tags end here-->
+		<skillGains>
+			<Social>-2</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	<!-- reluctant bookworm -->
+<ZCB.ZCBackstoryDef>
+		<defName>ZCB_ReluctantBookworm</defName>
+		<title>reluctant bookworm</title>
+		<titleShort>bookworm</titleShort>
+		<baseDesc>[PAWN_nameDef]'s parents started a small colony on a remote planet, so as a small child there wasn't much to do except read a ton of books. [PAWN_nameDef] read so many books that now [PAWN_pronoun] can barely stand the sight of one, much preferring to spend time outdoors.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 							<!-- required -->
+		</spawnCategories>
+		<!-- new tags start here -->
+		<minTechLevel>Medieval</minTechLevel>
+		<commonality>.7</commonality>
+		<father>Present</father>
+		<mother>Present</mother>
+		<colonySize>1~7</colonySize>
+		<requiredRecords>
+			<li>
+				<name>ZCB_TimeReading</name>
+				<minValue>560000</minValue>			<!-- about 9.3 days -->
+			</li>
+		</requiredRecords>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<!-- new tags end here-->
+		<skillGains>
+			<Plants>2</Plants>
+			<Animals>1</Animals>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
 <!-- ================================== HEALTH ================================== -->
 <!-- scarred veteran -->
 	<ZCB.ZCBackstoryDef>
