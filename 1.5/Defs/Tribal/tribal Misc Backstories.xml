@@ -75,6 +75,30 @@
 	</ZCB.ZCBackstoryDef>
 
 
+<!-- animal trainer -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_AnimalTrainer</defName>
+		<title>animal trainer</title>
+		<titleShort>trainer</titleShort>
+		<baseDesc>[PAWN_nameDef] has a way with animals, and has been training them since the moment [PAWN_pronoun] was old enough. Why carry firewood when a dog can do it for you?</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>.7</commonality>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<requiredPassions>
+			<li>Animals</li>
+		</requiredPassions>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<skillGains>
+			<Animals>5</Animals>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
 
 <!-- ================================== HEALTH ================================== -->
 <!-- scarred veteran -->
