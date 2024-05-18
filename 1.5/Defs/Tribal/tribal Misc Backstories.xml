@@ -103,7 +103,7 @@
 <!-- tribal bookworm -->
 	<ZCB.ZCBackstoryDef>
 		<defName>ZCB_TribalBookworm</defName>
-		<title>reluctant bookworm</title>
+		<title>tribal bookworm</title>
 		<titleShort>bookworm</titleShort>
 		<baseDesc>Despite growing up in a primitive tribe, [PAWN_nameDef] spent as much of [PAWN_possessive] time reading as possible. [PAWN_pronoun] loved getting lost in the worlds of stories, and dreaming about what might be.</baseDesc>
 		<slot>Childhood</slot>
@@ -127,6 +127,8 @@
 		</passionGains>
 		<skillGains>
 			<Intellectual>4</Intellectual>
+			<Artistic>1</Artistic>
+			<Animals>-2</Animals>
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
 	
@@ -191,6 +193,8 @@
 			<Crafting>2</Crafting>
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
+	
+	
 <!-- ================================== HEALTH ================================== -->
 <!-- scarred veteran -->
 	<ZCB.ZCBackstoryDef>
