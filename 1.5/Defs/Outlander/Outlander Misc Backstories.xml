@@ -113,9 +113,9 @@
 	
 	<!-- aspiring cook -->
 	<ZCB.ZCBackstoryDef>
-		<defName>ZCB_AspiringCook</defName>
-		<title>aspiring cook</title>
-		<titleShort>cook</titleShort>
+		<defName>ZCB_AspiringChef</defName>
+		<title>aspiring chef</title>
+		<titleShort>chef</titleShort>
 		<baseDesc>[PAWN_nameDef] grew up reading all sorts of book, but [PAWN_possessive] favorites were always cookbooks. [PAWN_pronoun] learned everything [PAWN_pronoun] could about recipes and ingredients from all over the world. [PAWN_nameDef] dreamed of one day opening [PAWN_possessive] own restaurant and writing books filled with all [PAWN_possessive] best recipes.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>

@@ -469,7 +469,7 @@
 		<title>lookout</title>
 		<titleShort>lookout</titleShort>
 		<titleShortFemale>test</titleShortFemale>
-		<baseDesc>[PAWN_nameDef] was assigned to watch over the animal herds when young, and keep an eye out for predators.  As [PAWN_pronoun] got older, [PAWN_pronoun] would chase the predators away with a bow.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was assigned to watch over the animal herds when young, and keep an eye out for predators. As [PAWN_pronoun] got older, [PAWN_pronoun] would chase the predators away with a bow.</baseDesc>
 		<slot>Childhood</slot>
 		<maxTechLevel>Neolithic</maxTechLevel>
 		<spawnCategories>

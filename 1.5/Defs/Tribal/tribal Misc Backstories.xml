@@ -49,7 +49,7 @@
 		<defName>ZCB_TribalDreamer</defName>
 		<title>dreamer</title>
 		<titleShort>dreamer</titleShort>
-		<baseDesc>Always running off to watch the clouds, [PAWN_nameDef] spent hardly any time at home.  [PAWN_pronoun] never learned how to interact with people, but whenever forced to do chores would come up with ways to do them faster than anyone else.</baseDesc>
+		<baseDesc>Always running off to watch the clouds, [PAWN_nameDef] spent hardly any time at home. [PAWN_pronoun] never learned how to interact with people, but whenever forced to do chores would come up with ways to do them faster than anyone else.</baseDesc>
 		<slot>Childhood</slot>
 		<maxTechLevel>Neolithic</maxTechLevel>
 		<spawnCategories>
