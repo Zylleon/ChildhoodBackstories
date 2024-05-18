@@ -154,7 +154,47 @@
 			<li>Social</li>
 		</workDisables>
 	</ZCB.ZCBackstoryDef>
-
+	
+	
+<!-- bookworm -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_BulliedBookworm</defName>
+		<title>bullied bookworm</title>
+		<titleShort>bookworm</titleShort>
+		<baseDesc>As a child, [PAWN_nameDef] never fit in with the other kids. Instead, [PAWN_pronoun] spent [PAWN_possessive] time reading, and occasionally fighting off bullies.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 							<!-- required -->
+		</spawnCategories>
+		<!-- new tags start here -->
+		<commonality>.5</commonality>
+		<colonySize>7~99</colonySize>
+		<requiredRecords>
+			<li>
+				<name>ZCB_TimeReading</name>
+				<minValue>550000</minValue>			<!-- about 9.15 days -->
+			</li>
+		</requiredRecords>
+		<requiredPassions>
+			<li>Intellectual</li>
+		</requiredPassions>
+		<passionGains>
+			<li>
+				<key>Intellectual</key>
+				<value>1</value>
+			</li>
+		</passionGains>
+		<!-- new tags end here-->
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+		<skillGains>
+			<Intellectual>5</Intellectual>
+			<Melee>2</Melee>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
 	<!-- ================================== HEALTH ================================== -->
 
 	<!-- surgery victim -->

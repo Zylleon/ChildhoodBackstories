@@ -99,7 +99,98 @@
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
 	
-
+	
+<!-- tribal bookworm -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_TribalBookworm</defName>
+		<title>reluctant bookworm</title>
+		<titleShort>bookworm</titleShort>
+		<baseDesc>Despite growing up in a primitive tribe, [PAWN_nameDef] spent as much of [PAWN_possessive] time reading as possible. [PAWN_pronoun] loved getting lost in the worlds of stories, and dreaming about what might be.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>1</commonality>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<requiredRecords>
+			<li>
+				<name>ZCB_TimeReading</name>
+				<minValue>560000</minValue>			<!-- about 9.3 days -->
+			</li>
+		</requiredRecords>
+		<passionGains>
+			<li>
+				<key>Intellectual</key>
+				<value>1</value>
+			</li>
+		</passionGains>
+		<skillGains>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+		
+<!-- budding adventurer -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_BuddingAdventurer</defName>
+		<title>budding adventurer</title>
+		<titleShort>adventurer</titleShort>
+		<baseDesc>[PAWN_nameDef] grew up reading all sorts of adventure stories. [PAWN_pronoun] dreamed of one day going on [PAWN_pronoun] own adventures, and writing bestselling books of [PAWN_possessive] exploits.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>1</commonality>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<requiredRecords>
+			<li>
+				<name>ZCB_TimeReading</name>
+				<minValue>540000</minValue>			<!-- about 9 days -->
+			</li>
+		</requiredRecords>
+		<requiredPassions>
+			<li>Intellectual</li>
+			<li>Melee</li>
+		</requiredPassions>
+		<skillGains>
+			<Intellectual>4</Intellectual>
+			<Melee>4</Melee>
+			<Shooting>2</Shooting>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	<!-- experimenter -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Experimenter</defName>
+		<title>experimenter</title>
+		<titleShort>experimenter</titleShort>
+		<baseDesc>[PAWN_nameDef] loved to learn, but had little access to books. Instead, [PAWN_pronoun] turned [PAWN_possessive] attention to practical experiments.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>.8</commonality>
+		<maxTechLevel>Neolithic</maxTechLevel>
+		<requiredRecords>
+			<li>
+				<name>ZCB_TimeReading</name>
+				<maxValue>354000</maxValue>			<!-- about 5.9 days -->
+			</li>
+		</requiredRecords>
+		<requiredPassions>
+			<li>Intellectual</li>
+		</requiredPassions>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Medicine>1</Medicine>
+			<Plants>2</Plants>
+			<Crafting>2</Crafting>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
 <!-- ================================== HEALTH ================================== -->
 <!-- scarred veteran -->
 	<ZCB.ZCBackstoryDef>

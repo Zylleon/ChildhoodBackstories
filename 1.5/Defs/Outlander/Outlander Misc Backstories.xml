@@ -110,6 +110,38 @@
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
 	
+	
+	<!-- aspiring cook -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_AspiringCook</defName>
+		<title>aspiring cook</title>
+		<titleShort>cook</titleShort>
+		<baseDesc>[PAWN_nameDef] grew up reading all sorts of book, but [PAWN_possessive] favorites were always cookbooks. [PAWN_pronoun] learned everything [PAWN_pronoun] could about recipes and ingredients from all over the world. [PAWN_nameDef] dreamed of one day opening [PAWN_possessive] own restaurant and writing books filled with all [PAWN_possessive] best recipes.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 
+		</spawnCategories>
+		<commonality>1</commonality>
+		<minTechLevel>Medieval</minTechLevel>
+		<requiredRecords>
+			<li>
+				<name>ZCB_TimeReading</name>
+				<minValue>540000</minValue>			<!-- about 9 days -->
+			</li>
+		</requiredRecords>
+		<requiredPassions>
+			<li>Intellectual</li>
+			<li>Cooking</li>
+		</requiredPassions>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Cooking>4</Cooking>
+			<Plants>2</Plants>
+			<Social>1</Social>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
 <!-- ================================== HEALTH ================================== -->
 <!-- scarred veteran -->
 	<ZCB.ZCBackstoryDef>
