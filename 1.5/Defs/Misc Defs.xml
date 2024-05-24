@@ -24,12 +24,14 @@
   <!-- childhood-specific activities -->
   
  <RecordDef>
-    <defName>ZCB_TimeBabyPlay</defName>
-    <label>time playing</label>
-    <description>Total time spent playing with babies.</description>
+    <defName>ZCB_TimeChildcare</defName>
+    <label>time childcaring</label>
+    <description>Total time spent playing with and feeding babies.</description>
     <type>Time</type>
     <measuredTimeJobs>
       <li>BabyPlay</li>
+      <li>BottleFeedBaby</li>
+      <li>Breastfeed</li>
     </measuredTimeJobs>
   </RecordDef>
   
