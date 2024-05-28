@@ -107,7 +107,7 @@
     <description>Total time spent taking lessions.</description>
     <type>Time</type>
     <measuredTimeJobs>
-      <li>Workwatching</li>
+      <li>Lessontaking</li>
     </measuredTimeJobs>
   </RecordDef>
   

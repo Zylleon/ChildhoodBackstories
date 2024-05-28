@@ -69,6 +69,20 @@ namespace ZCB
                     pawn.story.Adulthood = null;
                 }
 
+                string infoString = String.Format("[zylle.ChildhoodBackstories] {0} assigned {1} with records:", pawn.Name, backstory.defName);
+
+                StringBuilder recordDefs = new StringBuilder();
+                StringBuilder records = new StringBuilder();
+
+                List<RecordDef> recordList = DefDatabase<RecordDef>.AllDefsListForReading;
+
+                foreach(RecordDef recordDef in recordList)
+                {
+                    recordDefs.Append(recordDef.label + "\t");
+                    records.Append(pawn.records.GetValue(recordDef) + "\t");
+                }
+
+                Log.Message(infoString + "\n" + recordDefs.ToString() + "\n" + records.ToString());
 
             }
 
