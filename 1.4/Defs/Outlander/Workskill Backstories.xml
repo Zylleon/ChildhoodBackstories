@@ -240,7 +240,6 @@
 		<defName>ZCB_BuddingArtist</defName>
 		<title>budding artist</title>
 		<titleShort>artist</titleShort>
-		<titleShortFemale>test</titleShortFemale>
 		<baseDesc>[PAWN_nameDef] loved art from a young age, spending hours drawing on the floor and even dabbling in sculpture. However, [PAWN_pronoun] never learned to use [PAWN_possessive] skills in a practical way.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
