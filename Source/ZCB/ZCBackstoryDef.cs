@@ -156,17 +156,20 @@ namespace ZCB
 
             // records
             List<RecordDef> allRecordDefs = DefDatabase<RecordDef>.AllDefsListForReading;
+
+            float scalingFactor = Find.Storyteller.difficulty.childAgingRate / 4f;
+
             if (!requiredRecords.NullOrEmpty())
             {
                 foreach (ZCBReq reqR in requiredRecords)
                 {
                     RecordDef reqDef = allRecordDefs.Where(r => r.defName == reqR.name).FirstOrDefault();
                     float reqValue = pawn.records.GetValue(reqDef);
-                    if (reqValue < reqR.minValue)
+                    if (reqValue < reqR.minValue / scalingFactor)
                     {
                         output = false;
                     }
-                    if (reqValue > reqR.maxValue)
+                    if (reqValue > reqR.maxValue / scalingFactor)
                     {
                         output = false;
                     }
@@ -199,11 +202,11 @@ namespace ZCB
                 {
                     SkillDef skillDef = allSkillDefs.Where(r => r.defName == reqS.name).FirstOrDefault();
                     float reqValue = pawn.skills.GetSkill(skillDef).Level;
-                    if (reqValue < reqS.minValue)
+                    if (reqValue < reqS.minValue /scalingFactor)
                     {
                         output = false;
                     }
-                    if (reqValue > reqS.maxValue)
+                    if (reqValue > reqS.maxValue / scalingFactor)
                     {
                         output = false;
                     }
