@@ -68,7 +68,7 @@ namespace ZCB
                 {
                     pawn.story.Adulthood = null;
                 }
-
+                
                 string infoString = String.Format("[zylle.ChildhoodBackstories] {0} assigned {1} with records:", pawn.Name, backstory.defName);
 
                 StringBuilder recordDefs = new StringBuilder();
@@ -82,7 +82,14 @@ namespace ZCB
                     records.Append(pawn.records.GetValue(recordDef) + "\t");
                 }
 
-                Log.Message(infoString + "\n" + recordDefs.ToString() + "\n" + records.ToString());
+                string eligible = "\n Eligible backstories:\n";
+
+                foreach(ZCBackstoryDef bs in backstories)
+                {
+                    eligible += bs.defName + "\n";
+                }
+
+                Log.Message(infoString + "\n" + recordDefs.ToString() + "\n" + records.ToString() + eligible);
 
             }
 

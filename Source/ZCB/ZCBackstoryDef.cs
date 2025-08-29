@@ -125,7 +125,7 @@ namespace ZCB
             {
                 foreach (BackstoryTrait trait in requiredTraits)
                 {
-                    if (!pawn.story.traits.HasTrait(trait.def))
+                    if (!pawn.story.traits.HasTrait(trait.def, trait.degree))
                     {
                         output = false;
                     }
@@ -136,7 +136,7 @@ namespace ZCB
             {
                 foreach (BackstoryTrait trait in disallowedTraits)
                 {
-                    if (pawn.story.traits.HasTrait(trait.def))
+                    if (pawn.story.traits.HasTrait(trait.def, trait.degree))
                     {
                         output = false;
                     }
