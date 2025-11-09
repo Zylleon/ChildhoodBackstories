@@ -60,8 +60,8 @@
 	<!-- sole survivor -->
 	<ZCB.ZCBackstoryDef>
 		<defName>ZCB_SoleSurvivor</defName>
-		<title>sole suvivor</title>
-		<titleShort>suvivor</titleShort>
+		<title>sole survivor</title>
+		<titleShort>survivor</titleShort>
 		<baseDesc>Left completely alone, [PAWN_nameDef] was forced to fend for [PAWN_objective]self at a young age.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
