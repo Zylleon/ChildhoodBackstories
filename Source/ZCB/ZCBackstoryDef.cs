@@ -164,14 +164,22 @@ namespace ZCB
                 foreach (ZCBReq reqR in requiredRecords)
                 {
                     RecordDef reqDef = allRecordDefs.Where(r => r.defName == reqR.name).FirstOrDefault();
-                    float reqValue = pawn.records.GetValue(reqDef);
-                    if (reqValue < reqR.minValue / scalingFactor)
+
+                    if (reqDef == null)
                     {
                         output = false;
                     }
-                    if (reqValue > reqR.maxValue / scalingFactor)
+                    else
                     {
-                        output = false;
+                        float reqValue = pawn.records.GetValue(reqDef);
+                        if (reqValue < reqR.minValue / scalingFactor)
+                        {
+                            output = false;
+                        }
+                        if (reqValue > reqR.maxValue / scalingFactor)
+                        {
+                            output = false;
+                        }
                     }
                 }
             }
@@ -181,16 +189,23 @@ namespace ZCB
                 {
                     RecordDef bigRec = allRecordDefs.Where(r => r.defName == reqR.numerator).FirstOrDefault();
                     RecordDef smallRec = allRecordDefs.Where(r => r.defName == reqR.denominator).FirstOrDefault();
-                    if (reqR.ratio == 0)
+                    if (bigRec == null || smallRec == null)
                     {
-                        if (pawn.records.GetValue(bigRec) <= pawn.records.GetValue(smallRec))
+                        output = false;
+                    }
+                    else
+                    {
+                        if (reqR.ratio == 0)
+                        {
+                            if (pawn.records.GetValue(bigRec) <= pawn.records.GetValue(smallRec))
+                            {
+                                output = false;
+                            }
+                        }
+                        else if (pawn.records.GetValue(bigRec) / pawn.records.GetValue(smallRec) < reqR.ratio)
                         {
                             output = false;
                         }
-                    }
-                    else if (pawn.records.GetValue(bigRec) / pawn.records.GetValue(smallRec) < reqR.ratio)
-                    {
-                        output = false;
                     }
                 }
             }
@@ -201,14 +216,21 @@ namespace ZCB
                 foreach (ZCBReq reqS in requiredSkills)
                 {
                     SkillDef skillDef = allSkillDefs.Where(r => r.defName == reqS.name).FirstOrDefault();
-                    float reqValue = pawn.skills.GetSkill(skillDef).Level;
-                    if (reqValue < reqS.minValue /scalingFactor)
+                    if (skillDef == null)
                     {
                         output = false;
                     }
-                    if (reqValue > reqS.maxValue / scalingFactor)
+                    else
                     {
-                        output = false;
+                        float reqValue = pawn.skills.GetSkill(skillDef).Level;
+                        if (reqValue < reqS.minValue / scalingFactor)
+                        {
+                            output = false;
+                        }
+                        if (reqValue > reqS.maxValue / scalingFactor)
+                        {
+                            output = false;
+                        }
                     }
                 }
             }
@@ -218,9 +240,16 @@ namespace ZCB
                 foreach(string skill in requiredPassions)
                 {
                     SkillDef skillDef = allSkillDefs.Where(r => r.defName == skill).FirstOrDefault();
-                    if(pawn.skills.GetSkill(skillDef).passion == 0)
+                    if (skillDef == null)
                     {
                         output = false;
+                    }
+                    else
+                    {
+                        if (pawn.skills.GetSkill(skillDef).passion == 0)
+                        {
+                            output = false;
+                        }
                     }
                 }
             }
@@ -229,9 +258,16 @@ namespace ZCB
                 foreach (string skill in disallowedPassions)
                 {
                     SkillDef skillDef = allSkillDefs.Where(r => r.defName == skill).FirstOrDefault();
-                    if (pawn.skills.GetSkill(skillDef).passion != 0)
+                    if (skillDef == null)
                     {
                         output = false;
+                    }
+                    else
+                    {
+                        if (pawn.skills.GetSkill(skillDef).passion != 0)
+                        {
+                            output = false;
+                        }
                     }
                 }
             }
