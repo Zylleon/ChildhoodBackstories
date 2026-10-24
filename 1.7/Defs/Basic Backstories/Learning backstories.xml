@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- bookworm -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Bookworm2</defName>
+		<title>bookworm</title>
+		<titleShort>bookworm</titleShort>
+		<baseDesc>[PAWN_nameDef] spent much of [PAWN_possessive] with [PAWN_possessive] nose in a book, to the detriment of [PAWN_possessive] physical development.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.5</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_TimeReading</name>
+				<minValue>500000</minValue><!-- 8.3 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+
+		<skillGains>
+			<Intellectual>+2</Intellectual>
+			<Social>+1</Social>
+			<Melee>-3</Melee>
+			<Construction>-1</Construction>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+	<!-- bookworm - misanthrope -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Misanthrope</defName>
+		<title>misanthrope</title>
+		<titleShort>misanthrope</titleShort>
+		<baseDesc>[PAWN_nameDef] spent much of [PAWN_possessive] with [PAWN_possessive] nose in a book. In doing so, [PAWN_pronoun] learned to be cynical about human nature.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.5</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_TimeReading</name>
+				<minValue>450000</minValue><!-- 7.5 days -->
+			</li>
+		</requiredRecords>
+		<disallowedPassions>
+			<li>Social</li>
+		</disallowedPassions>
+		<!-- new tags end here-->
+
+		<skillGains>
+			<Intellectual>+2</Intellectual>
+			<Shooting>-1</Shooting>
+			<Social>-2</Social>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+	<!-- serious student -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_SeriousStudent</defName>
+		<title>serious student</title>
+		<titleShort>student</titleShort>
+		<baseDesc>[PAWN_nameDef] loved learning. [PAWN_pronoun] spent [PAWN_possessive] childhood reading everything [PAWN_pronoun] could get [PAWN_possessive] hands on, and begging adults for lessons.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>0.75</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_TimeReading</name>
+				<minValue>450000</minValue><!-- 7.5 days -->
+			</li>
+			<li>
+				<name>ZCB_Lessontaking</name>
+				<minValue>550000</minValue><!-- 9.2 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+
+		<skillGains>
+			<Intellectual>+3</Intellectual>
+			<Artistic>+2</Artistic>
+			<Crafting>+2</Crafting>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+	<!-- big dreamer -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_BigDreamer</defName>
+		<title>big dreamer</title>
+		<titleShort>dreamer</titleShort>
+		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] days dreaming about a better future.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>0.75</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Skydreaming</name>
+				<minValue>200000</minValue><!-- 3.3 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+
+		<skillGains>
+			<Intellectual>+3</Intellectual>
+			<Construction>+2</Construction>
+			<Crafting>+2</Crafting>
+			<Cooking>-2</Cooking>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+	<!-- truant -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Truant</defName>
+		<title>truant</title>
+		<titleShort>truant</titleShort>
+		<baseDesc>[PAWN_nameDef] skipped school as often as [PAWN_pronoun] could, preferring to spend [PAWN_possessive] time in nature.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>0.75</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Lessontaking</name>
+				<maxValue>300000</maxValue><!-- 5 days -->
+			</li>
+			<li>
+				<name>ZCB_NatureRunning</name>
+				<minValue>360000</minValue><!-- 6 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+
+		<skillGains>
+			<Intellectual>-3</Intellectual>
+			<Animals>+1</Animals>
+			<Plants>+2</Plants>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+	<!-- observer -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_PatientObserver</defName>
+		<title>patient observer</title>
+		<titleShort>observer</titleShort>
+		<baseDesc>[PAWN_nameDef] creeped out the adults around [PAWN_objective], silently watching everything they did. [PAWN_pronoun] did learn quite a lot in the process.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.75</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Workwatching</name>
+				<maxValue>300000</maxValue><!-- 5 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+
+		<skillGains>
+			<Social>-3</Social>
+			<Cooking>+1</Cooking>
+			<Crafting>+2</Crafting>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+</Defs>
