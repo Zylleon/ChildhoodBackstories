@@ -17,7 +17,25 @@ namespace ZCB
             if ((pawn.story.Childhood == ZCBDefOf.ColonyChild59 || pawn.story.Childhood == ZCBDefOf.Child27 || pawn.story.Childhood == ZCBDefOf.ChildTribal || pawn.story.Childhood == ZCBDefOf.TribeChild19) && previousLifeStage != null && previousLifeStage.developmentalStage.Juvenile())
             {
                 List<ZCBackstoryDef> backstories = DefDatabase<ZCBackstoryDef>.AllDefsListForReading;
-                backstories = backstories.Where(b => b.IsAcceptable(pawn) && b.spawnCategories.Contains("ZCB") && BackstorySettings.allowedBackstories[b.defName]).ToList();
+                //backstories = backstories.Where(b => b.IsAcceptable(pawn) && b.spawnCategories.Contains("ZCB") && BackstorySettings.allowedBackstories[b.defName]).ToList();
+                backstories = backstories.Where(b => b.IsAcceptable(pawn) && b.spawnCategories.Contains("ZCB")).ToList();
+                Log.Message(String.Format("[Childhood Backstories] {0} has reached age 13", pawn.Name));
+                string eligible = "\n Eligible backstories:\n";
+                foreach (ZCBackstoryDef bs in backstories)
+                {
+                    eligible += bs.defName + " (" + bs.commonality + ")" + "\n";
+                }
+                Log.Message(eligible);
+
+                backstories = backstories.Where(bb => BackstorySettings.allowedBackstories[bb.defName]).ToList();
+
+                string eligibleFiltered = "\n Eligible backstories, after mod settings:\n";
+                foreach (ZCBackstoryDef bs in backstories)
+                {
+                    eligibleFiltered += bs.defName + " (" + bs.commonality + ")" + "\n";
+                }
+                Log.Message(eligibleFiltered);
+
                 ZCBackstoryDef backstory = ZCBDefOf.ZCB_ColonyChild;
                 if (!backstories.NullOrEmpty())
                 {
@@ -35,7 +53,7 @@ namespace ZCB
                 }
 
 
-                if(backstory.forcedTraits != null)
+                if (backstory.forcedTraits != null)
                 {
                     List<BackstoryTrait> forcedTraits = backstory.forcedTraits;
                     for (int i = 0; i < forcedTraits.Count; i++)
@@ -69,6 +87,8 @@ namespace ZCB
                     pawn.story.Adulthood = null;
                 }
                 
+
+
                 string infoString = String.Format("[zylle.ChildhoodBackstories] {0} assigned {1} with records:", pawn.Name, backstory.defName);
 
                 StringBuilder recordDefs = new StringBuilder();
@@ -82,14 +102,7 @@ namespace ZCB
                     records.Append(pawn.records.GetValue(recordDef) + "\t");
                 }
 
-                string eligible = "\n Eligible backstories:\n";
-
-                foreach(ZCBackstoryDef bs in backstories)
-                {
-                    eligible += bs.defName + "\n";
-                }
-
-                Log.Message(infoString + "\n" + recordDefs.ToString() + "\n" + records.ToString() + eligible);
+                Log.Message(infoString + "\n" + recordDefs.ToString() + "\n" + records.ToString());
 
             }
 

@@ -15,8 +15,6 @@ namespace ZCB
         {
             new Harmony("zylle.ChildhoodBackstories").PatchAll();
 
-
-
             if (BackstorySettings.allowedBackstories.EnumerableNullOrEmpty())
             {
                 BackstorySettings.allowedBackstories = new Dictionary<string, bool>();
@@ -30,8 +28,10 @@ namespace ZCB
                     BackstorySettings.allowedBackstories.Add(story.defName, true);
                 }
             }
+
+            Log.Message("[Childhood Backstories] initialized");
         }
 
-        
+
     }
 }

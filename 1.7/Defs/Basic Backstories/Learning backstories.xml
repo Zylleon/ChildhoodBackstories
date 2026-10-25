@@ -175,7 +175,7 @@
 		<requiredRecords>
 			<li>
 				<name>ZCB_Workwatching</name>
-				<maxValue>300000</maxValue><!-- 5 days -->
+				<minValue>300000</minValue><!-- 5 days -->
 			</li>
 		</requiredRecords>
 		<!-- new tags end here-->
@@ -187,6 +187,442 @@
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
 
+	
+	
+<!-- good listener -->	
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_GoodListener</defName>
+		<title>good listener</title>
+		<titleShort>listener</titleShort>
+		<baseDesc>[PAWN_nameDef] learned best by watching others. [PAWN_pronoun] rarely figured anything out on his own.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.75</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Workwatching</name>
+				<minValue>300000</minValue>		<!-- 5 days -->
+			</li>
+			<li>
+				<name>ZCB_Lessontaking</name>
+				<minValue>530000</minValue>		<!-- 8.8 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Animals>2</Animals>
+			<Intellectual>-3</Intellectual>
+			<Artistic>-2</Artistic>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	
+<!-- graffiti artist -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_GraffitiArtist</defName>
+		<title>graffiti artist</title>
+		<titleShort>artist</titleShort>
+		<baseDesc>[PAWN_nameDef] loved to draw. [PAWN_pronoun] spent hours with chalk, bringing [PAWN_possessive] visions to life on the sidewalk.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>1.5</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Floordrawing</name>
+				<minValue>540000</minValue><!-- 9 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+
+		<skillGains>
+			<Artistic>2</Artistic>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
 
 
+
+<!-- cartoon artist -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_CartoonArtist</defName>
+		<title>cartoon artist</title>
+		<titleShort>artist</titleShort>
+		<baseDesc>[PAWN_nameDef] loved to draw. [PAWN_pronoun] drew many cartoons of those around [PAWN_objective], always in good fun.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.75</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Floordrawing</name>
+				<minValue>480000</minValue> <!-- 8 days -->
+			</li>
+		</requiredRecords>
+		<requiredPassions>
+			<li>Social</li>
+		</requiredPassions>
+		<!-- new tags end here-->
+		<skillGains>
+			<Artistic>2</Artistic>
+			<Social>2</Social>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	
+<!-- fast talker -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_FastTalker</defName>
+		<title>fast talker</title>
+		<titleShort>talker</titleShort>
+		<baseDesc>[PAWN_nameDef] spent hours talking on the radio, persuading outsiders to entertain [PAWN_objective] with their stories of the world.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.0</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Radiotalking</name>
+				<minValue>390000</minValue> <!-- 6.5 days -->
+			</li>
+		</requiredRecords>
+		<requiredPassions>
+			<li>Social</li>
+		</requiredPassions>
+		<!-- new tags end here-->
+		<skillGains>
+			<Intellectual>1</Intellectual>
+			<Social>2</Social>
+			<Animals>-2</Animals>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+<!-- fast talker 2 -->	
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_FastTalker2</defName>
+		<title>fast talker</title>
+		<titleShort>talker</titleShort>
+		<baseDesc>[PAWN_nameDef] spend [PAWN_possessive] childhood studying people and learning how to negotiate. [PAWN_pronoun] never liked getting [PAWN_possessive] hands dirty, preferring to talk others into doing [PAWN_possessive] work.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>1.0</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Radiotalking</name>
+				<minValue>420000</minValue> <!-- 7 days -->
+			</li>
+			<li>
+				<name>TimeWardening</name>
+				<minValue>30000</minValue> <!-- 0.5 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+		<passionGains>
+			<li>
+				<key>Social</key>
+				<value>1</value>
+			</li>
+		</passionGains>
+		<skillGains>
+			<Social>3</Social>
+			<Construction>-1</Construction>
+			<Plants>-2</Plants>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+	</ZCB.ZCBackstoryDef>
+	
+
+	
+<!-- naturalist -->	
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Naturalist</defName>
+		<title>naturalist</title>
+		<titleShort>naturalist</titleShort>
+		<baseDesc>[PAWN_nameDef] loved to run through the woods, learning everything [PAWN_pronoun] could about the natural world.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>1.0</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_NatureRunning</name>
+				<minValue>390000</minValue> <!-- 6.5 days -->
+			</li>
+			<li>
+				<name>TimeUnderRoof</name>
+				<maxValue>9330000</maxValue> <!-- 155.5 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+		<skillGains>
+			<Plants>2</Plants>
+			<Animals>1</Animals>
+			<Medicine>1</Medicine>
+			<Artistic>-1</Artistic>
+			<Construction>-2</Construction>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	
+<!-- electronics whiz -->	
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_ElectronicsWhiz</defName>
+		<title>electronics whiz</title>
+		<titleShort>whiz</titleShort>
+		<baseDesc>[PAWN_nameDef] enjoyed tinkering with gadgets, taking them apart to see how they worked.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.5</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Radiotalking</name>
+				<minValue>330000</minValue> <!-- 5.5 days -->
+			</li>
+			<li>
+				<name>ThingsCrafted</name>
+				<minValue>15</minValue>
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Crafting>3</Crafting>
+			<Medicine>-1</Medicine>
+			<Plants>-1</Plants>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	
+<!-- note scribbler -->	
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_NoteScribbler</defName>
+		<title>note scribbler</title>
+		<titleShort>scribbler</titleShort>
+		<baseDesc>[PAWN_nameDef] spent hours learning and observing, taking copious notes about everything [PAWN_pronoun] saw.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Workwatching</name>
+				<minValue>270000</minValue> <!-- 4.5 days -->
+			</li>
+			<li>
+				<name>ZCB_Lessontaking</name>
+				<minValue>480000</minValue> <!-- 8 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Construction>1</Construction>
+			<Plants>1</Plants>
+			<Artistic>-2</Artistic>
+			<Crafting>-1</Crafting>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+<!-- babysitter -->	
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Babysitter</defName>
+		<title>babysitter</title>
+		<titleShort>sitter</titleShort>
+		<baseDesc>[PAWN_nameDef] helped out with the younger children in [PAWN_possessive] community, becoming an excellent role model for them.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>2.0</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_TimeChildcare</name>
+				<minValue>210000</minValue> <!-- 3.5 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+		<skillGains>
+			<Social>2</Social>
+			<Crafting>1</Crafting>
+			<Medicine>1</Medicine>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+		
+<!-- burnout -->	
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Burnout</defName>
+		<title>burnout</title>
+		<titleShort>burnout</titleShort>
+		<baseDesc>[PAWN_nameDef] was an extremely bright child, but [PAWN_possessive] parents pushed [PAWN_objective] too hard. Now, [PAWN_pronoun] can't stand studying.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Lessontaking</name>
+				<minValue>600000</minValue> <!-- 10 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	
+		
+<!-- slow student -->	
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_SlowStudent</defName>
+		<title>slow student</title>
+		<titleShort>student</titleShort>
+		<baseDesc>[PAWN_nameDef] spent hours studying, but it was little use. [PAWN_pronoun] had difficulty learning, but never failed to try [PAWN_possessive] best.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>3.0</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Lessontaking</name>
+				<minValue>510000</minValue> <!-- 8.5 days -->
+			</li>
+		</requiredRecords>
+		<disallowedTraits>
+			<Industriousness>1</Industriousness>
+			<Industriousness>2</Industriousness>
+		</disallowedTraits>
+		<!-- new tags end here-->
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+		</forcedTraits>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	
+	
+<!-- gifted kid -->	
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_GiftedKid</defName>
+		<title>gifted kid</title>
+		<titleShort>gifted</titleShort>
+		<baseDesc>[PAWN_nameDef] spent hours studying, always pushing [PAWN_objective]self to new heights. [PAWN_pronoun] burned out, and now prefers to spend [PAWN_possessive] time working with [PAWN_possessive] hands.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.0</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Lessontaking</name>
+				<minValue>510000</minValue> <!-- 8.5 days -->
+			</li>
+		</requiredRecords>
+		<requiredTraits>
+			<FastLearner>0</FastLearner>
+		</requiredTraits>
+		<!-- new tags end here-->
+		<skillGains>
+			<Intellectual>-2</Intellectual>
+			<Crafting>2</Crafting>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+		
+	
+	
+	
+<!-- prepper -->	
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Prepper</defName>
+		<title>prepper</title>
+		<titleShort>prepper</titleShort>
+		<baseDesc>[PAWN_nameDef] kept [PAWN_possessive] eyes on the sky, always worrying about incoming threats. [PAWN_pronoun] spent hours listening to the radio, sure that [PAWN_pronoun] would soon hear signs of an incoming invasion.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.0</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Radiotalking</name>
+				<minValue>330000</minValue> <!-- 5.5 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+		<skillGains>
+			<Construction>2</Construction>
+			<Medicine>1</Medicine>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	
+<!-- fringe theorist -->	
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_FringeTheorist</defName>
+		<title>fringe theorist</title>
+		<titleShort>theorist</titleShort>
+		<baseDesc>[PAWN_nameDef] always knew better than [PAWN_possessive] teachers, exploring the world through books. [PAWN_pronoun] learned the secrets of telekenesis and perpetual motion, and how these technologies are surpressed by a secret society of stellarchs.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.0</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Radiotalking</name>
+				<minValue>420000</minValue> <!-- 7 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+		<skillGains>
+			<Social>-2</Social>
+			<Artistic>3</Artistic>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+		
 </Defs>
