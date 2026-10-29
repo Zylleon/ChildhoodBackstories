@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ============ ANIMALS ============ -->
+
+	<!-- animal advocate -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_AnimalAdvocate</defName>
+		<title>animal advocate</title>
+		<titleShort>advocate</titleShort>
+		<baseDesc>[PAWN_nameDef] loved spending time with pets and livestock. [PAWN_pronoun] advocated for the colony to treat them well, and could never bring [PAWN_objective]self to hurt a living creature.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+
+		<requiredPassions>
+			<li>Animals</li>
+		</requiredPassions>
+		<disallowedPassions>
+			<li>Social</li>
+		</disallowedPassions>
+
+		<passionGains>
+			<li>
+				<key>Animals</key>
+				<value>1</value>
+			</li>
+		</passionGains>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+		<skillGains>
+			<Animals>5</Animals>
+			<Medicine>1</Medicine>
+			<Social>-2</Social>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+	<!-- aspiring vetinarian -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_AspiringVetinarian</defName>
+		<title>aspiring vetinarian</title>
+		<titleShort>vet</titleShort>
+		<baseDesc>[PAWN_nameDef] wanted nothing more than to be a vet, helping animals in need. While playing pretend, [PAWN_pronoun] would repair stuffed animals as if they were [PAWN_possessive] patients.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.5</commonality>
+
+		<requiredPassions>
+			<li>Animals</li>
+			<li>Medicine</li>
+		</requiredPassions>
+
+		<skillGains>
+			<Crafting>5</Crafting>
+			<Medicine>1</Medicine>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+	<!-- zoolater -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Zoolater</defName>
+		<title>zoolater</title>
+		<titleShort>zoolater</titleShort>
+		<baseDesc>[PAWN_nameDef] loved animals more than anything else. [PAWN_pronoun] spent as much time around them as possible, learning every habit and preference.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+
+		<requiredPassions>
+			<li>Animals</li>
+		</requiredPassions>
+
+		<skillGains>
+			<Animals>5</Animals>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+	<!-- ============ ARTISTIC ============ -->
+
+	<!-- visionary -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Visionary</defName>
+		<title>visionary</title>
+		<titleShort>visionary</titleShort>
+		<baseDesc>[PAWN_nameDef] imagined a better world, and was willing to work to create it.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>1.5</commonality>
+
+		<requiredPassions>
+			<li>Artistic</li>
+		</requiredPassions>
+		<requiredRecords>
+			<li>
+				<name>ZCB_Skydreaming</name>
+				<minValue>200000</minValue><!-- 3.3 days -->
+			</li>
+		</requiredRecords>
+
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Construction>3</Construction>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+	<!-- budding artist -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_BuddingArtist2</defName>
+		<title>budding artist</title>
+		<titleShort>artist</titleShort>
+		<baseDesc>[PAWN_nameDef] loved to do art of all types, bringing [PAWN_possessive] visions to life with [PAWN_possessive] hands.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.5</commonality>
+
+		<requiredPassions>
+			<li>Artistic</li>
+		</requiredPassions>
+
+		<skillGains>
+			<Artistic>3</Artistic>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+	<!-- ============ CONSTRUCTION ============ -->
+
+	<!-- budding architect -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_BuddingArchitect</defName>
+		<title>budding architect</title>
+		<titleShort>architect</titleShort>
+		<baseDesc>[PAWN_nameDef] loved building anything [PAWN_pronoun] could get [PAWN_possessive] hands on. [PAWN_pronoun] envisioned a better future for [PAWN_factionName], and became determined to improve their infrastructure.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+
+		<requiredPassions>
+			<li>Construction</li>
+		</requiredPassions>
+
+		<passionGains>
+			<li>
+				<key>Intellectual</key>
+				<value>1</value>
+			</li>
+		</passionGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+
+	<!-- ============ COOKING ============ -->
+
+	<!-- kitchen helper -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_KitchenHelper</defName>
+		<title>kitchen helper</title>
+		<titleShort>helper</titleShort>
+		<baseDesc>[PAWN_nameDef] loved helping out in the kitchen. [PAWN_pronoun] watched over the shoulder of more experienced chefs, learning their secrets. [PAWN_pronoun] also helped shoo away hungry colonists who were making a nuisance of themselves.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.75</commonality>
+
+		<requiredPassions>
+			<li>Cooking</li>
+		</requiredPassions>
+
+		<skillGains>
+			<Cooking>3</Cooking>
+			<Social>3</Social>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+	<!-- dishwasher -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Dishwasher</defName>
+		<title>dishwasher</title>
+		<titleShort>washer</titleShort>
+		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] spare time in the kitchen. To avoid being underfoot, [PAWN_pronoun] helped wash dishes. In return, the cooks of COLONYNAME taught [PAWN_objective] the basics of food prep.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.5</commonality>
+
+		<requiredPassions>
+			<li>Cooking</li>
+		</requiredPassions>
+		<requiredRecords>
+			<li>
+				<name>TimeCleaning</name>
+				<minValue>1300000</minValue><!-- 21.7 days -->
+			</li>
+		</requiredRecords>
+		<disallowedTraits>
+			<Industriousness>1</Industriousness>
+			<Industriousness>2</Industriousness>
+		</disallowedTraits>
+
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+		</forcedTraits>
+	</ZCB.ZCBackstoryDef>
+
+
+
+
+	<!-- ============ CRAFTING ============ -->
+
+	<!-- crafty kid -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_CraftyKid</defName>
+		<title>crafty kid</title>
+		<titleShort>crafty</titleShort>
+		<baseDesc>[PAWN_nameDef] aspired to create. The finished product didn't matter; the creative process itself was the important part.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+
+		<requiredPassions>
+			<li>Crafting</li>
+		</requiredPassions>
+
+		<forcedTraits>
+			<Ascetic>0</Ascetic>
+		</forcedTraits>
+	</ZCB.ZCBackstoryDef>
+
+
+
+
+	<!-- ============ MEDICINE ============ -->
+
+	<!-- budding medic -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_BuddingMedic</defName>
+		<title>budding medic</title>
+		<titleShort>medic</titleShort>
+		<baseDesc>[PAWN_nameDef] aspired to be a doctor. [PAWN_pronoun]  hated to see anyone hurt, and was always eager to help however [PAWN_pronoun] could.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+
+		<requiredPassions>
+			<li>Medicine</li>
+		</requiredPassions>
+
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+		<skillGains>
+			<Medicine>5</Medicine>
+			<Social>2</Social>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+	<!-- ============ MELEE ============ -->
+
+	<!-- bully -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Bully2</defName>
+		<title>bully</title>
+		<titleShort>medic</titleShort>
+		<baseDesc>Unable or unwilling to negotiate, [PAWN_nameDef] bulled those around [PAWN_objective] to get [PAWN_possessive] way. [PAWN_pronoun] wasn't afraid to use [PAWN_possessive] fists.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+
+		<requiredPassions>
+			<li>Melee</li>
+		</requiredPassions>
+		<disallowedPassions>
+			<li>Social</li>
+		</disallowedPassions>
+
+		<workDisables>
+			<li>ManualDumb</li>
+			<li>Social</li>
+		</workDisables>
+		<skillGains>
+			<Melee>5</Melee>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+	<!-- ============ MINING ============ -->
+
+	<!-- delver -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Delver</defName>
+		<title>delver</title>
+		<titleShort>delver</titleShort>
+		<baseDesc>[PAWN_nameDef] loved digging through soil and rock. [PAWN_pronoun] was always sure that [PAWN_pronoun] would find a great treasure that would make [PAWN_objective] rich.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+
+		<requiredPassions>
+			<li>Mining</li>
+		</requiredPassions>
+		<skillGains>
+			<Social>3</Social>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+	<!-- ============ INTELLECTUAL ============ -->
+
+	<!-- eager student -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_EagerStudent</defName>
+		<title>eager student</title>
+		<titleShort>student</titleShort>
+		<baseDesc>[PAWN_nameDef] was always eager to learn. [PAWN_pronoun] dreamed of one day being a researcher, but could never decide what to study.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+
+		<requiredPassions>
+			<li>Intellectual</li>
+		</requiredPassions>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Cooking>-2</Cooking>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+
+
+
+	<!-- ============ PLANTS ============ -->
+
+	<!-- junior botanist -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_JuniorBotanist</defName>
+		<title>junior botanist</title>
+		<titleShort>botanist</titleShort>
+		<baseDesc>[PAWN_nameDef] loved gardening. [PAWN_pronoun] enjoyed digging in the dirt, and then seeing what grew out of it.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+
+		<requiredPassions>
+			<li>Plants</li>
+		</requiredPassions>
+		<skillGains>
+			<Plants>3</Plants>
+			<Mining>2</Mining>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+	<!-- grower -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Grower</defName>
+		<title>grower</title>
+		<titleShort>grower</titleShort>
+		<baseDesc>[PAWN_nameDef] enjoyed growing things, especially when he [PAWN_pronoun] got to eat them afterwards.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+
+		<requiredPassions>
+			<li>Plants</li>
+		</requiredPassions>
+		<requiredRecords>
+			<li>
+				<name>PlantsHarvested</name>
+				<minValue>350</minValue><!-- 3.3 days -->
+			</li>
+		</requiredRecords>
+		
+		<skillGains>
+			<Plants>2</Plants>
+			<Cooking>3</Cooking>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+
+
+	<!-- ============ SHOOTING ============ -->
+
+	<!-- gunthusiast -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Gunthusiast</defName>
+		<title>gunthusiast</title>
+		<titleShort>gunner</titleShort>
+		<baseDesc>[PAWN_nameDef] was always excited about guns. [PAWN_pronoun] learned everything [PAWN_pronoun] could about using, maintaining, and repairing them.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.0</commonality>
+
+		<disallowedTraits>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+		</disallowedTraits>
+		<requiredPassions>
+			<li>Shooting</li>
+		</requiredPassions>
+		
+		<forcedTraits>
+			<ShootingAccuracy>1</ShootingAccuracy>
+		</forcedTraits>
+		<skillGains>
+			<Crafting>2</Crafting>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+	<!-- ============ SOCIAL ============ -->
+
+	<!-- chatterbox -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Chatterbox</defName>
+		<title>chatterbox</title>
+		<titleShort>chatter</titleShort>
+		<baseDesc>[PAWN_nameDef] was a chatterbox, talking endlessly at anyone who would listen. [PAWN_pronoun] never knew when to stop.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.75</commonality>
+
+		<requiredPassions>
+			<li>Social</li>
+		</requiredPassions>
+
+		<skillGains>
+			<Social>-3</Social>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+<!-- ============ NO PASSIONS ============ -->
+
+	<!-- listless -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Listless</defName>
+		<title>listless child</title>
+		<titleShort>listless</titleShort>
+		<baseDesc>[PAWN_nameDef] drifted through life, interested in ver little around [PAWN_objective].</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+
+		<disallowedPassions>	<!-- this should be all of them -->
+			<li>Animals</li>
+			<li>Artistic</li>
+			<li>Construction</li>
+			<li>Cooking</li>
+			<li>Crafting</li>
+			<li>Medical</li>
+			<li>Melee</li>
+			<li>Mining</li>
+			<li>Intellectual</li>
+			<li>Plants</li>
+			<li>Shooting</li>
+			<li>Social</li>
+		</disallowedPassions>
+
+		<forcedTraits>
+			<NaturalMood>-2</NaturalMood>
+		</forcedTraits>
+	</ZCB.ZCBackstoryDef>
+	
+	
+	
+
+	<!-- class clown -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_ClassClown</defName>
+		<title>class clown</title>
+		<titleShort>clown</titleShort>
+		<baseDesc>[PAWN_nameDef] had no innate interests. Unable to entertain himseld, [PAWN_pronoun] turned to entertaining others. In doing so, [PAWN_pronoun] found a calling.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.5</commonality>
+
+		<disallowedPassions>	<!-- this should be all of them -->
+			<li>Animals</li>
+			<li>Artistic</li>
+			<li>Construction</li>
+			<li>Cooking</li>
+			<li>Crafting</li>
+			<li>Medical</li>
+			<li>Melee</li>
+			<li>Mining</li>
+			<li>Intellectual</li>
+			<li>Plants</li>
+			<li>Shooting</li>
+			<li>Social</li>
+		</disallowedPassions>
+
+		<passionGains>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+		</passionGains>
+
+	</ZCB.ZCBackstoryDef>
+
+
+
+</Defs>

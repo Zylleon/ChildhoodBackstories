@@ -97,5 +97,34 @@
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
 
+<!-- orphan -->
+<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Orphan</defName>
+		<title>orphan</title>
+		<titleShort>orphan</titleShort>
+		<baseDesc>Orphaned at a young age, [PAWN_nameDef]  had to look after [PAWN_objective]self. [PAWN_pronoun] had no time to help with the younger children, nor the inclination/ +melee, cooking. -social, medicine.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li> 					
+			<li>ZCB_NaturalMeditation</li> 					
+		</spawnCategories>
+		
+		<commonality>8</commonality>
+		<father>Dead</father>
+		<mother>Dead</mother>
 
+		<requiredRecords>
+			<li>
+				<name>ZCB_TimeChildcare</name>
+				<maxValue>15000</maxValue>		<!-- 0.25 days -->
+			</li>
+		</requiredRecords>	
+
+		<skillGains>
+			<Cooking>3</Cooking>
+			<Melee>2</Melee>
+			<Social>-2</Social>
+			<Medicine>-2</Medicine>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
 </Defs>

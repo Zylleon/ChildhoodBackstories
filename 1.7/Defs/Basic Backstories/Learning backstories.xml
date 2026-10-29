@@ -6,7 +6,7 @@
 		<defName>ZCB_Bookworm2</defName>
 		<title>bookworm</title>
 		<titleShort>bookworm</titleShort>
-		<baseDesc>[PAWN_nameDef] spent much of [PAWN_possessive] with [PAWN_possessive] nose in a book, to the detriment of [PAWN_possessive] physical development.</baseDesc>
+		<baseDesc>[PAWN_nameDef] spent much of [PAWN_possessive] time with [PAWN_possessive] nose in a book, to the detriment of [PAWN_possessive] physical development.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li>
@@ -623,6 +623,157 @@
 		</skillGains>
 	</ZCB.ZCBackstoryDef>
 	
+	<!-- sedentary -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Sedentary</defName>
+		<title>sedentary kid</title>
+		<titleShort>sedentary</titleShort>
+		<baseDesc>[PAWN_nameDef] avoided strenuous activity. [PAWN_pronoun] preferred to stay indoors, where it's nice and clean.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_NatureRunning</name>
+				<maxValue>175000</maxValue><!-- 2.9 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+
+		<skillGains>
+			<Intellectual>1</Intellectual>
+			<Crafting>2</Crafting>
+			<Animals>-1</Animals>
+			<Mining>-2</Mining>
+			<Melee>-1</Melee>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+<!-- shut-in -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_ShutIn</defName>
+		<title>shut-in</title>
+		<titleShort>shut-in</titleShort>
+		<baseDesc>[PAWN_nameDef] loves nature, but only through a window. Any contact with actual sunlight is to be avoided.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_NatureRunning</name>
+				<maxValue>160000</maxValue><!-- 2.6 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+
+		<skillGains>
+			<Plants>3</Plants>
+		</skillGains>
+		<forcedTraits>
+			<Undergrounder>0</Undergrounder>
+		</forcedTraits>
+	</ZCB.ZCBackstoryDef>
+
+
+<!-- shut-in2 -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_ShutIn2</defName>
+		<title>shut-in</title>
+		<titleShort>shut-in</titleShort>
+		<baseDesc>[PAWN_nameDef] shunned nature, preferring to spend his time indoors.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_NatureRunning</name>
+				<maxValue>200000</maxValue>		<!-- 3.3 days -->
+			</li>
+			<li>
+				<name>ZCB_TimeReading</name>
+				<minValue>440000</minValue>		<!-- 7.3 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+
+		<skillGains>
+			<Plants>-2</Plants>
+			<Cooking>2</Cooking>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Undergrounder>0</Undergrounder>
+		</forcedTraits>
+	</ZCB.ZCBackstoryDef>
 	
+	
+<!-- indepentend thinker -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_IndependentThinker</defName>
+		<title>independent thinker</title>
+		<titleShort>thinker</titleShort>
+		<baseDesc>[PAWN_nameDef] never liked to learn from experience, preferring to figure things out [PAWN_objective]self.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>0.5</commonality>
+		<!-- new tags start here -->
+		<requiredRecords>
+			<li>
+				<name>ZCB_Workwatching</name>
+				<maxValue>200000</maxValue>		<!-- 3.3 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+
+		<skillGains>
+			<Social>-2</Social>
+			<Construction>2</Construction>
+			<Intellectual>3</Intellectual>
+		</skillGains>
 		
+	</ZCB.ZCBackstoryDef>
+	
+	
+	
+<!-- parentified -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Parentified</defName>
+		<title>parentified child</title>
+		<titleShort>parentified</titleShort>
+		<baseDesc>After the death of [PAWN_possessive] mother, [PAWN_nameDef] had to step up and help out with the little ones. [PAWN_pronoun] didn't really get to be a kid.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
+		</spawnCategories>
+		<commonality>2.5</commonality>
+		<!-- new tags start here -->
+		<mother>Dead</mother>
+		<requiredRecords>
+			<li>
+				<name>ZCB_TimeChildcare</name>
+				<minValue>30000</minValue>		<!-- 0.5 days -->
+			</li>
+		</requiredRecords>
+		<!-- new tags end here-->
+
+		<skillGains>
+			<Social>2</Social>
+			<Cooking>3</Cooking>
+			<Artistic>-3</Artistic>
+		</skillGains>
+		
+	</ZCB.ZCBackstoryDef>
 </Defs>
