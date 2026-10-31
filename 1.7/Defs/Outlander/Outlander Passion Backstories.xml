@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ============ ANIMALS ============ -->
+
+	<!-- Bookkeepper -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_Bookkeepper</defName>
+		<title>bookkeepper</title>
+		<titleShort>bookie</titleShort>
+		<baseDesc>Always drawn cards and dice, [PAWN_nameDef] was always to be found wherever wagers were being made. [PAWN_pronoun] was often entrusted with keeping track of the bets.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<minTechLevel>Medieval</minTechLevel>
+		<commonality>1.0</commonality>
+
+		<requiredPassions>
+			<li>Social</li>
+			<li>Intellectual</li>
+		</requiredPassions>
+
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Social>2</Social>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+</Defs>

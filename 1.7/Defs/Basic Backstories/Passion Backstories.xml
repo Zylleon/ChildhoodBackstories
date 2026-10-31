@@ -484,6 +484,42 @@
 	</ZCB.ZCBackstoryDef>
 
 
+	<!-- puppet master -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_PuppetMaster</defName>
+		<title>puppet master</title>
+		<titleShort>master</titleShort>
+		<baseDesc>Early on, [PAWN_nameDef] learned that words can make people do things. [PAWN_pronoun] practiced this skill as much as [PAWN_pronoun] could, using this to get out of chores that [PAWN_pronoun] didn't like.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.2</commonality>
+
+		<requiredPassions>
+			<li>Social</li>
+		</requiredPassions>
+		<requiredRecords>
+			<li>
+				<name>MessesCleaned</name>
+				<maxValue>3400</maxValue>
+			</li>
+			<li>
+				<name>ThingsHauled</name>
+				<maxValue>600</maxValue>
+			</li>
+		</requiredRecords>
+		
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<skillGains>
+			<Social>5</Social>
+		</skillGains>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+	</ZCB.ZCBackstoryDef>
 
 <!-- ============ NO PASSIONS ============ -->
 
@@ -492,7 +528,7 @@
 		<defName>ZCB_Listless</defName>
 		<title>listless child</title>
 		<titleShort>listless</titleShort>
-		<baseDesc>[PAWN_nameDef] drifted through life, interested in ver little around [PAWN_objective].</baseDesc>
+		<baseDesc>[PAWN_nameDef] drifted through life, interested in very little around [PAWN_objective].</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li>
@@ -559,6 +595,139 @@
 
 	</ZCB.ZCBackstoryDef>
 
+
+
+
+	<!-- jack-of-all-trades -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_JackOfAll</defName>
+		<title>jack of all trades</title>
+		<titleShort>jack</titleShort>
+		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] childhood helping around the colony however [PAWN_pronoun] could. [PAWN_pronoun] learned every trade quite well, but never took a liking to any of them.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.25</commonality>
+
+		<disallowedPassions>	<!-- this should be all of them -->
+			<li>Animals</li>
+			<li>Artistic</li>
+			<li>Construction</li>
+			<li>Cooking</li>
+			<li>Crafting</li>
+			<li>Medical</li>
+			<li>Melee</li>
+			<li>Mining</li>
+			<li>Intellectual</li>
+			<li>Plants</li>
+			<li>Shooting</li>
+			<li>Social</li>
+		</disallowedPassions>
+		<requiredSkills>
+			<li>
+				<name>Animals</name>
+				<minValue>3</minValue>
+			</li>
+			<li>
+				<name>Artistic</name>
+				<minValue>2</minValue>
+			</li>
+			<li>
+				<name>Construction</name>
+				<minValue>3</minValue>
+			</li>
+			<li>
+				<name>Cooking</name>
+				<minValue>4</minValue>
+			</li>
+			<li>
+				<name>Crafting</name>
+				<minValue>3</minValue>
+			</li>
+			<li>
+				<name>Plants</name>
+				<minValue>4</minValue>
+			</li>
+		</requiredSkills>
+
+		<skillGains>
+			<Animals>1</Animals>
+			<Artistic>1</Artistic>
+			<Construction>3</Construction>
+			<Cooking>2</Cooking>
+			<Plants>2</Plants>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
+
+	<!-- good for nothing -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_GoodForNothing</defName>
+		<title>good for nothing</title>
+		<titleShort>nothing</titleShort>
+		<baseDesc>Whenever [PAWN_nameDef] tried to help around the colony,[PAWN_pronoun] would cause more harm than good. Adults started to berate [PAWN_objective] for every mistake. [PAWN_nameDef] developed a constant fear of being judged.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+		</spawnCategories>
+		<commonality>1.25</commonality>
+
+		<disallowedPassions>	<!-- this should be all of them -->
+			<li>Animals</li>
+			<li>Artistic</li>
+			<li>Construction</li>
+			<li>Cooking</li>
+			<li>Crafting</li>
+			<li>Medical</li>
+			<li>Melee</li>
+			<li>Mining</li>
+			<li>Intellectual</li>
+			<li>Plants</li>
+			<li>Shooting</li>
+			<li>Social</li>
+		</disallowedPassions>
+		<requiredSkills>
+			<li>
+				<name>Animals</name>
+				<maxValue>5</maxValue>
+			</li>
+			<li>
+				<name>Artistic</name>
+				<maxValue>3</maxValue>
+			</li>
+			<li>
+				<name>Construction</name>
+				<maxValue>5</maxValue>
+			</li>
+			<li>
+				<name>Cooking</name>
+				<maxValue>6</maxValue>
+			</li>
+			<li>
+				<name>Crafting</name>
+				<maxValue>4</maxValue>
+			</li>
+			<li>
+				<name>Plants</name>
+				<maxValue>6</maxValue>
+			</li>
+		</requiredSkills>
+
+		<forcedTraits>
+			<Neurotic>2</Neurotic>
+		</forcedTraits>
+		<skillGains>
+			<Animals>1</Animals>
+			<Artistic>1</Artistic>
+			<Construction>1</Construction>
+			<Cooking>1</Cooking>
+			<Plants>1</Plants>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+	
+	
 
 
 </Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- social butterfly -->
+	<ZCB.ZCBackstoryDef>
+		<defName>ZCB_SocialButterfly</defName>
+		<title>social butterfly</title>
+		<titleShort>butterfly</titleShort>
+		<baseDesc>As a child, [PAWN_nameDef] loved talking to everyone. [PAWN_pronoun] spent his days learning about [PAWN_possessive] other tribe members, determined to be liked by everyone.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li> 	
+		</spawnCategories>
+		<maxTechLevel>Neolithic</maxTechLevel>	
+		<commonality>0.5</commonality>
+
+		<requiredPassions>
+			<li>Social</li>
+		</requiredPassions>
+
+		<skillGains>
+			<Social>4</Social>
+		</skillGains>
+	</ZCB.ZCBackstoryDef>
+
+
+
+</Defs>
