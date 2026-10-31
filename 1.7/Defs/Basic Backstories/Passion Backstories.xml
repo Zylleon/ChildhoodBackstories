@@ -496,6 +496,7 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ZCB</li>
+			<li>ZCB_NaturalMeditation</li>
 		</spawnCategories>
 		<commonality>0.5</commonality>
 
